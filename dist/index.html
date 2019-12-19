@@ -1,0 +1,790 @@
+<!DOCTYPE html><html lang="en"><head><style>.dismissButton{background-color:#fff;border:1px solid #dadce0;color:#1a73e8;border-radius:4px;font-family:Roboto,sans-serif;font-size:14px;height:36px;cursor:pointer;padding:0 24px}.dismissButton:hover{background-color:rgba(66,133,244,0.04);border:1px solid #d2e3fc}.dismissButton:focus{background-color:rgba(66,133,244,0.12);border:1px solid #d2e3fc;outline:0}.dismissButton:hover:focus{background-color:rgba(66,133,244,0.16);border:1px solid #d2e2fd}.dismissButton:active{background-color:rgba(66,133,244,0.16);border:1px solid #d2e2fd;box-shadow:0 1px 2px 0 rgba(60,64,67,0.3),0 1px 3px 1px rgba(60,64,67,0.15)}.dismissButton:disabled{background-color:#fff;border:1px solid #f1f3f4;color:#3c4043}
+</style><style>.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}
+</style><style>.gm-control-active>img{box-sizing:content-box;display:none;left:50%;pointer-events:none;position:absolute;top:50%;transform:translate(-50%,-50%)}.gm-control-active>img:nth-child(1){display:block}.gm-control-active:hover>img:nth-child(1),.gm-control-active:active>img:nth-child(1){display:none}.gm-control-active:hover>img:nth-child(2),.gm-control-active:active>img:nth-child(3){display:block}
+</style><link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans"><style>.gm-ui-hover-effect{opacity:.6}.gm-ui-hover-effect:hover{opacity:1}
+</style><style>.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px;box-sizing:border-box}
+</style><style>@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style>.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+</style><style>.gm-style img{max-width: none;}.gm-style {font: 400 11px Roboto, Arial, sans-serif; text-decoration: none;}</style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="google-site-verification" content="PwthRsk4cRHlIxOt06ANh4FhHLCsEqapTNrMyvSc3Ng">
+  <link rel="icon" href="favicon.ico">
+  <title>Idanim Group | קבוצת עידנים</title>
+  <meta name="description" content="קבוצת עידנים מפעילה ומשווקת רכבי טיאוט חדישים בגדלים שונים וציוד ניקיו נוסף. עידנים מפעילה מערך שירות של מנהלים, עובדים ומכונאים מיומנים אשר כל מטרתם לתחזק ולטפל ברכבי הטיאוט. גם בשטח. החברה מתחייבת להעניק שירות וטיפול ללא הגבלה לשביעות רצון הלקוח. נותנו מספר כלים בודדים להזמנה מהרו לשלוח פרטים.">
+  <link href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
+  <script type="text/javascript" id="www-widgetapi-script" src="http://s.ytimg.com/yts/jsbin/www-widgetapi-vflC6bXIS/www-widgetapi.js" async=""></script><script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-scrollto"></script>
+<link href="/css/chunk-vendors.449ddfca.css" rel="stylesheet"><link href="/css/app.ce3d6cdc.css" rel="stylesheet"><script async="" src="https://www.google-analytics.com/analytics.js" charset="utf-8"></script><style type="text/css" id="vuetify-theme-stylesheet">a { color: #1976d2; }
+.primary {
+  background-color: #1976d2 !important;
+  border-color: #1976d2 !important;
+}
+.primary--text {
+  color: #1976d2 !important;
+  caret-color: #1976d2 !important;
+}
+.primary.lighten-5 {
+  background-color: #c7fdff !important;
+  border-color: #c7fdff !important;
+}
+.primary--text.text--lighten-5 {
+  color: #c7fdff !important;
+  caret-color: #c7fdff !important;
+}
+.primary.lighten-4 {
+  background-color: #a8e0ff !important;
+  border-color: #a8e0ff !important;
+}
+.primary--text.text--lighten-4 {
+  color: #a8e0ff !important;
+  caret-color: #a8e0ff !important;
+}
+.primary.lighten-3 {
+  background-color: #8ac5ff !important;
+  border-color: #8ac5ff !important;
+}
+.primary--text.text--lighten-3 {
+  color: #8ac5ff !important;
+  caret-color: #8ac5ff !important;
+}
+.primary.lighten-2 {
+  background-color: #6aaaff !important;
+  border-color: #6aaaff !important;
+}
+.primary--text.text--lighten-2 {
+  color: #6aaaff !important;
+  caret-color: #6aaaff !important;
+}
+.primary.lighten-1 {
+  background-color: #488fef !important;
+  border-color: #488fef !important;
+}
+.primary--text.text--lighten-1 {
+  color: #488fef !important;
+  caret-color: #488fef !important;
+}
+.primary.darken-1 {
+  background-color: #005eb6 !important;
+  border-color: #005eb6 !important;
+}
+.primary--text.text--darken-1 {
+  color: #005eb6 !important;
+  caret-color: #005eb6 !important;
+}
+.primary.darken-2 {
+  background-color: #00479b !important;
+  border-color: #00479b !important;
+}
+.primary--text.text--darken-2 {
+  color: #00479b !important;
+  caret-color: #00479b !important;
+}
+.primary.darken-3 {
+  background-color: #003180 !important;
+  border-color: #003180 !important;
+}
+.primary--text.text--darken-3 {
+  color: #003180 !important;
+  caret-color: #003180 !important;
+}
+.primary.darken-4 {
+  background-color: #001e67 !important;
+  border-color: #001e67 !important;
+}
+.primary--text.text--darken-4 {
+  color: #001e67 !important;
+  caret-color: #001e67 !important;
+}
+.secondary {
+  background-color: #424242 !important;
+  border-color: #424242 !important;
+}
+.secondary--text {
+  color: #424242 !important;
+  caret-color: #424242 !important;
+}
+.secondary.lighten-5 {
+  background-color: #c1c1c1 !important;
+  border-color: #c1c1c1 !important;
+}
+.secondary--text.text--lighten-5 {
+  color: #c1c1c1 !important;
+  caret-color: #c1c1c1 !important;
+}
+.secondary.lighten-4 {
+  background-color: #a6a6a6 !important;
+  border-color: #a6a6a6 !important;
+}
+.secondary--text.text--lighten-4 {
+  color: #a6a6a6 !important;
+  caret-color: #a6a6a6 !important;
+}
+.secondary.lighten-3 {
+  background-color: #8b8b8b !important;
+  border-color: #8b8b8b !important;
+}
+.secondary--text.text--lighten-3 {
+  color: #8b8b8b !important;
+  caret-color: #8b8b8b !important;
+}
+.secondary.lighten-2 {
+  background-color: #727272 !important;
+  border-color: #727272 !important;
+}
+.secondary--text.text--lighten-2 {
+  color: #727272 !important;
+  caret-color: #727272 !important;
+}
+.secondary.lighten-1 {
+  background-color: #595959 !important;
+  border-color: #595959 !important;
+}
+.secondary--text.text--lighten-1 {
+  color: #595959 !important;
+  caret-color: #595959 !important;
+}
+.secondary.darken-1 {
+  background-color: #2c2c2c !important;
+  border-color: #2c2c2c !important;
+}
+.secondary--text.text--darken-1 {
+  color: #2c2c2c !important;
+  caret-color: #2c2c2c !important;
+}
+.secondary.darken-2 {
+  background-color: #171717 !important;
+  border-color: #171717 !important;
+}
+.secondary--text.text--darken-2 {
+  color: #171717 !important;
+  caret-color: #171717 !important;
+}
+.secondary.darken-3 {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+.secondary--text.text--darken-3 {
+  color: #000000 !important;
+  caret-color: #000000 !important;
+}
+.secondary.darken-4 {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+.secondary--text.text--darken-4 {
+  color: #000000 !important;
+  caret-color: #000000 !important;
+}
+.accent {
+  background-color: #82b1ff !important;
+  border-color: #82b1ff !important;
+}
+.accent--text {
+  color: #82b1ff !important;
+  caret-color: #82b1ff !important;
+}
+.accent.lighten-5 {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+.accent--text.text--lighten-5 {
+  color: #ffffff !important;
+  caret-color: #ffffff !important;
+}
+.accent.lighten-4 {
+  background-color: #f8ffff !important;
+  border-color: #f8ffff !important;
+}
+.accent--text.text--lighten-4 {
+  color: #f8ffff !important;
+  caret-color: #f8ffff !important;
+}
+.accent.lighten-3 {
+  background-color: #daffff !important;
+  border-color: #daffff !important;
+}
+.accent--text.text--lighten-3 {
+  color: #daffff !important;
+  caret-color: #daffff !important;
+}
+.accent.lighten-2 {
+  background-color: #bce8ff !important;
+  border-color: #bce8ff !important;
+}
+.accent--text.text--lighten-2 {
+  color: #bce8ff !important;
+  caret-color: #bce8ff !important;
+}
+.accent.lighten-1 {
+  background-color: #9fccff !important;
+  border-color: #9fccff !important;
+}
+.accent--text.text--lighten-1 {
+  color: #9fccff !important;
+  caret-color: #9fccff !important;
+}
+.accent.darken-1 {
+  background-color: #6596e2 !important;
+  border-color: #6596e2 !important;
+}
+.accent--text.text--darken-1 {
+  color: #6596e2 !important;
+  caret-color: #6596e2 !important;
+}
+.accent.darken-2 {
+  background-color: #467dc6 !important;
+  border-color: #467dc6 !important;
+}
+.accent--text.text--darken-2 {
+  color: #467dc6 !important;
+  caret-color: #467dc6 !important;
+}
+.accent.darken-3 {
+  background-color: #2364aa !important;
+  border-color: #2364aa !important;
+}
+.accent--text.text--darken-3 {
+  color: #2364aa !important;
+  caret-color: #2364aa !important;
+}
+.accent.darken-4 {
+  background-color: #004c90 !important;
+  border-color: #004c90 !important;
+}
+.accent--text.text--darken-4 {
+  color: #004c90 !important;
+  caret-color: #004c90 !important;
+}
+.error {
+  background-color: #ff5252 !important;
+  border-color: #ff5252 !important;
+}
+.error--text {
+  color: #ff5252 !important;
+  caret-color: #ff5252 !important;
+}
+.error.lighten-5 {
+  background-color: #ffe4d5 !important;
+  border-color: #ffe4d5 !important;
+}
+.error--text.text--lighten-5 {
+  color: #ffe4d5 !important;
+  caret-color: #ffe4d5 !important;
+}
+.error.lighten-4 {
+  background-color: #ffc6b9 !important;
+  border-color: #ffc6b9 !important;
+}
+.error--text.text--lighten-4 {
+  color: #ffc6b9 !important;
+  caret-color: #ffc6b9 !important;
+}
+.error.lighten-3 {
+  background-color: #ffa99e !important;
+  border-color: #ffa99e !important;
+}
+.error--text.text--lighten-3 {
+  color: #ffa99e !important;
+  caret-color: #ffa99e !important;
+}
+.error.lighten-2 {
+  background-color: #ff8c84 !important;
+  border-color: #ff8c84 !important;
+}
+.error--text.text--lighten-2 {
+  color: #ff8c84 !important;
+  caret-color: #ff8c84 !important;
+}
+.error.lighten-1 {
+  background-color: #ff6f6a !important;
+  border-color: #ff6f6a !important;
+}
+.error--text.text--lighten-1 {
+  color: #ff6f6a !important;
+  caret-color: #ff6f6a !important;
+}
+.error.darken-1 {
+  background-color: #df323b !important;
+  border-color: #df323b !important;
+}
+.error--text.text--darken-1 {
+  color: #df323b !important;
+  caret-color: #df323b !important;
+}
+.error.darken-2 {
+  background-color: #bf0025 !important;
+  border-color: #bf0025 !important;
+}
+.error--text.text--darken-2 {
+  color: #bf0025 !important;
+  caret-color: #bf0025 !important;
+}
+.error.darken-3 {
+  background-color: #9f0010 !important;
+  border-color: #9f0010 !important;
+}
+.error--text.text--darken-3 {
+  color: #9f0010 !important;
+  caret-color: #9f0010 !important;
+}
+.error.darken-4 {
+  background-color: #800000 !important;
+  border-color: #800000 !important;
+}
+.error--text.text--darken-4 {
+  color: #800000 !important;
+  caret-color: #800000 !important;
+}
+.info {
+  background-color: #2196f3 !important;
+  border-color: #2196f3 !important;
+}
+.info--text {
+  color: #2196f3 !important;
+  caret-color: #2196f3 !important;
+}
+.info.lighten-5 {
+  background-color: #d4ffff !important;
+  border-color: #d4ffff !important;
+}
+.info--text.text--lighten-5 {
+  color: #d4ffff !important;
+  caret-color: #d4ffff !important;
+}
+.info.lighten-4 {
+  background-color: #b5ffff !important;
+  border-color: #b5ffff !important;
+}
+.info--text.text--lighten-4 {
+  color: #b5ffff !important;
+  caret-color: #b5ffff !important;
+}
+.info.lighten-3 {
+  background-color: #95e8ff !important;
+  border-color: #95e8ff !important;
+}
+.info--text.text--lighten-3 {
+  color: #95e8ff !important;
+  caret-color: #95e8ff !important;
+}
+.info.lighten-2 {
+  background-color: #75ccff !important;
+  border-color: #75ccff !important;
+}
+.info--text.text--lighten-2 {
+  color: #75ccff !important;
+  caret-color: #75ccff !important;
+}
+.info.lighten-1 {
+  background-color: #51b0ff !important;
+  border-color: #51b0ff !important;
+}
+.info--text.text--lighten-1 {
+  color: #51b0ff !important;
+  caret-color: #51b0ff !important;
+}
+.info.darken-1 {
+  background-color: #007cd6 !important;
+  border-color: #007cd6 !important;
+}
+.info--text.text--darken-1 {
+  color: #007cd6 !important;
+  caret-color: #007cd6 !important;
+}
+.info.darken-2 {
+  background-color: #0064ba !important;
+  border-color: #0064ba !important;
+}
+.info--text.text--darken-2 {
+  color: #0064ba !important;
+  caret-color: #0064ba !important;
+}
+.info.darken-3 {
+  background-color: #004d9f !important;
+  border-color: #004d9f !important;
+}
+.info--text.text--darken-3 {
+  color: #004d9f !important;
+  caret-color: #004d9f !important;
+}
+.info.darken-4 {
+  background-color: #003784 !important;
+  border-color: #003784 !important;
+}
+.info--text.text--darken-4 {
+  color: #003784 !important;
+  caret-color: #003784 !important;
+}
+.success {
+  background-color: #4caf50 !important;
+  border-color: #4caf50 !important;
+}
+.success--text {
+  color: #4caf50 !important;
+  caret-color: #4caf50 !important;
+}
+.success.lighten-5 {
+  background-color: #dcffd6 !important;
+  border-color: #dcffd6 !important;
+}
+.success--text.text--lighten-5 {
+  color: #dcffd6 !important;
+  caret-color: #dcffd6 !important;
+}
+.success.lighten-4 {
+  background-color: #beffba !important;
+  border-color: #beffba !important;
+}
+.success--text.text--lighten-4 {
+  color: #beffba !important;
+  caret-color: #beffba !important;
+}
+.success.lighten-3 {
+  background-color: #a2ff9e !important;
+  border-color: #a2ff9e !important;
+}
+.success--text.text--lighten-3 {
+  color: #a2ff9e !important;
+  caret-color: #a2ff9e !important;
+}
+.success.lighten-2 {
+  background-color: #85e783 !important;
+  border-color: #85e783 !important;
+}
+.success--text.text--lighten-2 {
+  color: #85e783 !important;
+  caret-color: #85e783 !important;
+}
+.success.lighten-1 {
+  background-color: #69cb69 !important;
+  border-color: #69cb69 !important;
+}
+.success--text.text--lighten-1 {
+  color: #69cb69 !important;
+  caret-color: #69cb69 !important;
+}
+.success.darken-1 {
+  background-color: #2d9437 !important;
+  border-color: #2d9437 !important;
+}
+.success--text.text--darken-1 {
+  color: #2d9437 !important;
+  caret-color: #2d9437 !important;
+}
+.success.darken-2 {
+  background-color: #00791e !important;
+  border-color: #00791e !important;
+}
+.success--text.text--darken-2 {
+  color: #00791e !important;
+  caret-color: #00791e !important;
+}
+.success.darken-3 {
+  background-color: #006000 !important;
+  border-color: #006000 !important;
+}
+.success--text.text--darken-3 {
+  color: #006000 !important;
+  caret-color: #006000 !important;
+}
+.success.darken-4 {
+  background-color: #004700 !important;
+  border-color: #004700 !important;
+}
+.success--text.text--darken-4 {
+  color: #004700 !important;
+  caret-color: #004700 !important;
+}
+.warning {
+  background-color: #ffc107 !important;
+  border-color: #ffc107 !important;
+}
+.warning--text {
+  color: #ffc107 !important;
+  caret-color: #ffc107 !important;
+}
+.warning.lighten-5 {
+  background-color: #ffffae !important;
+  border-color: #ffffae !important;
+}
+.warning--text.text--lighten-5 {
+  color: #ffffae !important;
+  caret-color: #ffffae !important;
+}
+.warning.lighten-4 {
+  background-color: #ffff91 !important;
+  border-color: #ffff91 !important;
+}
+.warning--text.text--lighten-4 {
+  color: #ffff91 !important;
+  caret-color: #ffff91 !important;
+}
+.warning.lighten-3 {
+  background-color: #ffff74 !important;
+  border-color: #ffff74 !important;
+}
+.warning--text.text--lighten-3 {
+  color: #ffff74 !important;
+  caret-color: #ffff74 !important;
+}
+.warning.lighten-2 {
+  background-color: #fff956 !important;
+  border-color: #fff956 !important;
+}
+.warning--text.text--lighten-2 {
+  color: #fff956 !important;
+  caret-color: #fff956 !important;
+}
+.warning.lighten-1 {
+  background-color: #ffdd37 !important;
+  border-color: #ffdd37 !important;
+}
+.warning--text.text--lighten-1 {
+  color: #ffdd37 !important;
+  caret-color: #ffdd37 !important;
+}
+.warning.darken-1 {
+  background-color: #e0a600 !important;
+  border-color: #e0a600 !important;
+}
+.warning--text.text--darken-1 {
+  color: #e0a600 !important;
+  caret-color: #e0a600 !important;
+}
+.warning.darken-2 {
+  background-color: #c18c00 !important;
+  border-color: #c18c00 !important;
+}
+.warning--text.text--darken-2 {
+  color: #c18c00 !important;
+  caret-color: #c18c00 !important;
+}
+.warning.darken-3 {
+  background-color: #a27300 !important;
+  border-color: #a27300 !important;
+}
+.warning--text.text--darken-3 {
+  color: #a27300 !important;
+  caret-color: #a27300 !important;
+}
+.warning.darken-4 {
+  background-color: #855a00 !important;
+  border-color: #855a00 !important;
+}
+.warning--text.text--darken-4 {
+  color: #855a00 !important;
+  caret-color: #855a00 !important;
+}</style><script type="text/javascript" charset="utf8" async="" src="http://www.youtube.com/iframe_api"></script><script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfadAd_19lorSH8SaDNfQP1rorYOirzOY&amp;libraries=places&amp;callback=vueGoogleMapsInit" async="" defer=""></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/37/10a/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/37/10a/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/37/10a/map.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/37/10a/marker.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/37/10a/onion.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/api/js/ViewportInfoService.GetViewportInfo?1m6&amp;1m2&amp;1d32.03133559430571&amp;2d34.72874185301953&amp;2m2&amp;1d32.07643785645249&amp;2d34.829130759088116&amp;2u15&amp;4sen-US&amp;5e0&amp;6sm%40478000000&amp;7b0&amp;8e0&amp;callback=_xdc_._mofz7y&amp;key=AIzaSyAfadAd_19lorSH8SaDNfQP1rorYOirzOY&amp;token=98711"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/vt?pb=!1m4!1m3!1i15!2i19548!3i13300!1m4!1m3!1i15!2i19548!3i13301!1m4!1m3!1i15!2i19549!3i13300!1m4!1m3!1i15!2i19549!3i13301!1m4!1m3!1i15!2i19550!3i13300!1m4!1m3!1i15!2i19550!3i13301!1m4!1m3!1i15!2i19551!3i13300!1m4!1m3!1i15!2i19551!3i13301!2m3!1e0!2sm!3i478187628!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e3!12m1!5b1&amp;callback=_xdc_._dfm593&amp;key=AIzaSyAfadAd_19lorSH8SaDNfQP1rorYOirzOY&amp;token=33433"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/37/10a/controls.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate?1shttp%3A%2F%2Flocalhost%3A8000%2F&amp;4sAIzaSyAfadAd_19lorSH8SaDNfQP1rorYOirzOY&amp;callback=_xdc_._bik175&amp;key=AIzaSyAfadAd_19lorSH8SaDNfQP1rorYOirzOY&amp;token=108951"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/api/js/QuotaService.RecordEvent?1shttp%3A%2F%2Flocalhost%3A8000%2F&amp;3sAIzaSyAfadAd_19lorSH8SaDNfQP1rorYOirzOY&amp;7s4nld4k&amp;10e1&amp;callback=_xdc_._sunqfn&amp;key=AIzaSyAfadAd_19lorSH8SaDNfQP1rorYOirzOY&amp;token=68540"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/vt?pb=!1m4!1m3!1i15!2i19548!3i13300!1m4!1m3!1i15!2i19548!3i13301!1m4!1m3!1i15!2i19549!3i13300!1m4!1m3!1i15!2i19549!3i13301!1m4!1m3!1i15!2i19550!3i13300!1m4!1m3!1i15!2i19550!3i13301!1m4!1m3!1i15!2i19551!3i13300!1m4!1m3!1i15!2i19551!3i13301!2m3!1e0!2sm!3i478187628!3m14!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e3!12m1!5b1&amp;callback=_xdc_._1vs1k9&amp;key=AIzaSyAfadAd_19lorSH8SaDNfQP1rorYOirzOY&amp;token=43400"></script></head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but Idanim-Group doesn't work properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript>
+  <div data-app="true" class="application theme--light" id="app"><div tabindex="-1" data-v-ccc0b0ec="" class="v-dialog__content" style="z-index: 0;"><div class="v-dialog" style="display: none;"><div data-v-ccc0b0ec="" class="v-card theme--light"><nav data-v-ccc0b0ec="" class="v-toolbar v-toolbar--fixed theme--light" style="margin-top: 0px; padding-right: 0px; padding-left: 0px; transform: translateY(0px);" data-booted="true"><div class="v-toolbar__content" style="height: 48px;"><div data-v-ccc0b0ec="" class="v-toolbar__title"><span data-v-ccc0b0ec="" class="black--text">עגלות לטיאטוא מדרכות</span></div><div data-v-ccc0b0ec="" class="spacer"></div><div data-v-ccc0b0ec="" class="v-toolbar__items"><i data-v-ccc0b0ec="" aria-hidden="true" class="v-icon v-icon--link material-icons theme--light">close</i></div></div></nav><div data-v-ccc0b0ec="" class="v-card__text"><div data-v-ccc0b0ec="" class="container"><div data-v-ccc0b0ec="" class="flex xs12 xl8 ma-auto"><div data-v-ccc0b0ec="" class="v-responsive v-image"><div class="v-responsive__sizer" style="padding-bottom: 75%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/1.c890d193.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div></div><div data-v-ccc0b0ec="" class="flex xs12 xl8 ma-auto"><span data-v-ccc0b0ec="" class="display-1">עגלות לטיאטוא מדרכות</span><p data-v-ccc0b0ec="" style="font-size: 1.8em;">
+                מגוון רחב של עגלות לשימוש ממושך עמידות לכל פגעי מזג אויר
+                העגלות כוללות מתקן מיוחד למטאטא וליעה. ניתן לקבלן בגדלים
+                ובצבעים שונים.
+              </p><h2 data-v-ccc0b0ec="">נתונים כללים של העגלה</h2><div data-v-ccc0b0ec="" class="stats-text-dialog"><table data-v-ccc0b0ec="" dir="rtl"><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">נפח מיכל אשפה</td><td data-v-ccc0b0ec="">100 ליטר</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">נפח מיכל אחורי</td><td data-v-ccc0b0ec="">30 ליטר</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">מתקן מיוחד לאכסון המטאטא והיעה</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">
+                      מסגרת ברזל קל בקוטר של 25 מ"מ מצופה בצבע מיוחד נגד חלודה
+                    </td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">גודל גלגלים קדמיים</td><td data-v-ccc0b0ec="">300 מ"מ גומי</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">2 ידיות מפלסטיק מוקשה</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">
+                      ניתן לקבל את המכסים ואת מיכלי האיכסון בצבעים שונים
+                    </td></tr></table></div></div></div></div></div></div></div><div tabindex="-1" data-v-ccc0b0ec="" class="v-dialog__content" style="z-index: 0;"><div class="v-dialog" style="display: none;"><div data-v-ccc0b0ec="" class="v-card theme--light"><nav data-v-ccc0b0ec="" class="v-toolbar v-toolbar--fixed theme--light" style="margin-top: 0px; padding-right: 0px; padding-left: 0px; transform: translateY(0px);" data-booted="true"><div class="v-toolbar__content" style="height: 48px;"><div data-v-ccc0b0ec="" class="v-toolbar__title"><span data-v-ccc0b0ec="" class="black--text">דגם D4500 מתוצרת "קדמה"</span></div><div data-v-ccc0b0ec="" class="spacer"></div><div data-v-ccc0b0ec="" class="v-toolbar__items"><i data-v-ccc0b0ec="" aria-hidden="true" class="v-icon v-icon--link material-icons theme--light">close</i></div></div></nav><div data-v-ccc0b0ec="" class="v-card__text"><div data-v-ccc0b0ec="" class="container"><div data-v-ccc0b0ec="" class="flex xs12 xl8 ma-auto"><div data-v-ccc0b0ec="" class="v-responsive v-image"><div class="v-responsive__sizer" style="padding-bottom: 50%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/d4000-0.cc158154.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div></div><div data-v-ccc0b0ec="" class="flex xs12 xl8 ma-auto"><span data-v-ccc0b0ec="" class="display-2">דגם D4500 מתוצרת "קדמה"</span><p data-v-ccc0b0ec="" style="font-size: 1.8em;">
+                משאית לטיאוט כבישים בנפח מיכל של 4.5 מ"ק ועד 8 מ"ק. מתקן
+                הטיאוט מורכב על גבי שילדה מתוצרת "הינו טויוטה" או "דאף", תלוי
+                בגודל המיכל. כולל 2 מברשות צדדיות הנעות לכל הכיוונים, מברשת
+                גלילית מרכזית ופיית יניקה בעלת כושר יניקה גבוה במיוחד, מתזי
+                מיים הממוקמים בחזית ובמרכז הכלי מפזרים רסס מיים כדי לספוג את
+                האבק בזמן פעולת הטיאוט. מיכל המיים גדול במיוחד 1,200 ליטר
+                ונותן אפשרות לעבודת שטיפה רציפה לאורך זמן. ה D4500 כולל מערכת
+                נוספת לשטיפה בלחץ עם צינור באורך של 15 מטר ואקדח שטיפה בלחץ
+                גבוה. המערכת מורכבת על גג הכלי ומאפשרת שטיפה בכל הכיוונים. וכן
+                צינור שאיבה גדול המותקן באחורי המשאית. תא הנהג מבודד מפגעי מזג
+                אויר, רעשים, אבק וגזי פליטה. תא הנהג כולל מערכת מיזוג אויר,
+                כיסא נהג קפיצי, מתכוונן ונוח במיוחד. וכן כיסא נוסף לאיש צוות
+                שני. רדיו ומצלמה אחורית עם מסך צבעוני. וכן מערכת שליטה ותפעול
+                של המברשות, השטיפה וריקון מיכל האשפה.
+              </p><h2 data-v-ccc0b0ec="">נתונים כללים של הכלי</h2><div data-v-ccc0b0ec="" class="stats-text-dialog"><table data-v-ccc0b0ec="" dir="rtl"><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">הכלי</td><td data-v-ccc0b0ec="">מכונה טיאוט כבישים D4500</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">דגם</td><td data-v-ccc0b0ec="">קדמה D4500</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">אורך</td><td data-v-ccc0b0ec="">6150 מ"מ</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">רוחב כולל מברשות</td><td data-v-ccc0b0ec="">2200 מ"מ</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">גובה</td><td data-v-ccc0b0ec="">2840 מ"מ</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">נפח מיכל אשפה</td><td data-v-ccc0b0ec="">4.5 ועד 8.0 מ"ק</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">קוטר מברשות צדדיות</td><td data-v-ccc0b0ec="">315 מ"מ</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">מהירות מקסימלית בזמן טיאוט</td><td data-v-ccc0b0ec="">15 קמ"ש</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">רוחב שטח טיאוט בהפעלת מברשות בצד אחד</td><td data-v-ccc0b0ec="">2200 מ"מ</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">נפח מיכל מים</td><td data-v-ccc0b0ec="">1,200 ליטר</td></tr></table></div><div data-v-ccc0b0ec="" role="img" aria-label="idanim-h4" class="v-responsive v-image"><div class="v-responsive__sizer" style="padding-bottom: 48.2014%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/stats1.8f47fd04.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div><div data-v-ccc0b0ec="" role="img" aria-label="idanim-h4" class="v-responsive v-image"><div class="v-responsive__sizer" style="padding-bottom: 103.584%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/stats.7f60695e.png&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div></div></div></div></div></div></div><div tabindex="-1" data-v-ccc0b0ec="" class="v-dialog__content" style="z-index: 0;"><div class="v-dialog" style="display: none;"><div data-v-ccc0b0ec="" class="v-card theme--light"><nav data-v-ccc0b0ec="" class="v-toolbar v-toolbar--fixed theme--light" style="margin-top: 0px; padding-right: 0px; padding-left: 0px; transform: translateY(0px);" data-booted="true"><div class="v-toolbar__content" style="height: 48px;"><div data-v-ccc0b0ec="" class="v-toolbar__title"><span data-v-ccc0b0ec="" class="black--text">דגם D4000 מתוצרת טיסאן</span></div><div data-v-ccc0b0ec="" class="spacer"></div><div data-v-ccc0b0ec="" class="v-toolbar__items"><i data-v-ccc0b0ec="" aria-hidden="true" class="v-icon v-icon--link material-icons theme--light">close</i></div></div></nav><div data-v-ccc0b0ec="" class="v-card__text"><div data-v-ccc0b0ec="" class="container"><div data-v-ccc0b0ec="" class="flex xs12 xl8 ma-auto"><div data-v-ccc0b0ec="" class="v-responsive v-image"><div class="v-responsive__sizer" style="padding-bottom: 50%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/d4000-0.845786c2.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div></div><div data-v-ccc0b0ec="" class="flex xs12 xl8 ma-auto"><span data-v-ccc0b0ec="" class="display-2">D4000 - דגם מתוצרת טיסאן</span><p data-v-ccc0b0ec="" style="font-size: 1.8em;">
+                משאית לטיאוט כבישים בנפח של 4.0 מ"ק. מתקן הטיאוט מורכב על גבי
+                שילדה מתוצרת "הינו טויוטה" כולל 2 מברשות צדדיות הנעות לכל
+                הכיוונים, מברשת גלילית מרכזית ופיית יניקה בעלת כושר יניקה גבוה
+                במיוחד, מתזי מיים הממוקמים בחזית ובמרכז הכלי מפזרים רסס מיים
+                כדי לספוג את האבק בזמן פעולת הטיאוט. מיכל המיים גדול במיוחד
+                ונותן אפשרות לעבודת שטיפה רציפה לאורך זמן. ה D4000 כולל מערכת
+                נוספת לשטיפה בלחץ עם צינור באורך של 15 מטר ואקדח שטיפה בלחץ
+                גבוה. המערכת מורכבת על גג הכלי ומאפשרת שטיפה בכל הכיוונים. וכן
+                צינור שאיבה גדול המותקן באחורי המשאית. תא הנהג מבודד מפגעי מזג
+                אויר, רעשים, אבק וגזי פליטה. תא הנהג כולל מערכת מיזוג אויר,
+                כיסא נהג קפיצי, מתכוונן ונוח במיוחד. וכן כיסא נוסף לאיש צוות
+                שני. רדיו ומצלמה אחורית עם מסך צבעוני. וכן מערכת שליטה ותפעול
+                של המברשות, השטיפה וריקון מיכל האשפה.
+              </p><div data-v-ccc0b0ec="" class="stats-text-dialog"><table data-v-ccc0b0ec="" dir="rtl"><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">הכלי</td><td data-v-ccc0b0ec="">משאית לטיאוט D4000 תוצרת טיסאן</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">דגם</td><td data-v-ccc0b0ec="">D4000</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">אורך</td><td data-v-ccc0b0ec="">6150 מ"מ</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">רוחב כולל מברשות</td><td data-v-ccc0b0ec="">2200 מ"מ</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">גובה</td><td data-v-ccc0b0ec="">2840 מ"מ</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">נפח מיכל אשפה</td><td data-v-ccc0b0ec="">4 מטר מעוקב</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">קוטר מברשות צדדיות</td><td data-v-ccc0b0ec="">315 מ"מ</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">מהירות מקסימלית בזמן טיאוט</td><td data-v-ccc0b0ec="">15 קמ"ש</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">רוחב שטח טיאוט בהפעלת מברשות בצד אחד</td><td data-v-ccc0b0ec="">2200 מ"מ</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">נפח מיכל מים</td><td data-v-ccc0b0ec="">750 ליטר</td></tr></table></div><div data-v-ccc0b0ec="" class="flex title"></div><div data-v-ccc0b0ec="" role="img" aria-label="idanim-h4" class="v-responsive v-image"><div class="v-responsive__sizer" style="padding-bottom: 75%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/d4000-1.9fa09e2c.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div><div data-v-ccc0b0ec="" role="img" aria-label="idanim-h4" class="v-responsive v-image"><div class="v-responsive__sizer" style="padding-bottom: 75%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/d4000-2.48635ad4.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div></div></div></div></div></div></div><div tabindex="-1" data-v-ccc0b0ec="" class="v-dialog__content" style="z-index: 0;"><div class="v-dialog" style="display: none;"><div data-v-ccc0b0ec="" class="v-card theme--light"><nav data-v-ccc0b0ec="" class="v-toolbar v-toolbar--fixed theme--light" style="margin-top: 0px; padding-right: 0px; padding-left: 0px; transform: translateY(0px);" data-booted="true"><div class="v-toolbar__content" style="height: 48px;"><div data-v-ccc0b0ec="" class="v-toolbar__title"><span data-v-ccc0b0ec="" class="black--text">H5 - מפרט טכני</span></div><div data-v-ccc0b0ec="" class="spacer"></div><div data-v-ccc0b0ec="" class="v-toolbar__items"><i data-v-ccc0b0ec="" aria-hidden="true" class="v-icon v-icon--link material-icons theme--light">close</i></div></div></nav><div data-v-ccc0b0ec="" class="v-card__text"><div data-v-ccc0b0ec="" class="container"><div data-v-ccc0b0ec="" class="flex xs12 xl8 ma-auto"><div data-v-ccc0b0ec="" class="v-responsive v-image"><div class="v-responsive__sizer" style="padding-bottom: 84.7682%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/h5-0.616a0667.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div></div><div data-v-ccc0b0ec="" class="flex xs12 xl8 ma-auto"><span data-v-ccc0b0ec="" class="display-1">H5 - מפרט טכני</span><p data-v-ccc0b0ec="" style="font-size: 1.8em;">
+                ספינת הדגל של המפעל, מטאטא כבישים הידרוסטטי עם מנוע חזק
+                במיוחד, המיכל בנפח של 5 מ"ק. מנוע פרקינס או איווקו, משאבות
+                הידראוליות מתוצרת .BOSCH הכלי רחב יותר מדגם H4 וכולל מנוע גדול
+                יותר. כולל מערכת יחודית של 2 מברשות הנעות ימינה ושמאלה להגדלת
+                רוחב הטיאוט ופיית יניקה בעלת כושר יניקה גבוה במיוחד, מתזי מיים
+                הממוקמים בחזית הכלי מפזרים רסס מיים כדי לספוג את האבק בזמן
+                פעולת הטיאוט. מיכל המיים גדול במיוחד ונותן אפשרות לעבודת שטיפה
+                רציפה לאורך זמן. ה H5 כולל מערכת נוספת לשטיפה בלחץ עם צינור
+                באורך של 15 מטר ואקדח שטיפה בלחץ גבוה. המערכת מורכבת על גג
+                הכלי ומאפשרת שטיפה בכל הכיוונים. תא נהג פנורמי, מבודד מפגעי
+                מזג אויר, רעשים, אבק וגזי פליטה. תא הנהג כולל מערכת מיזוג
+                אויר, כיסא נהג קפיצי, מתכוונן ונוח במיוחד. וכן כיסא נוסף לאיש
+                צוות שני. רדיו ומצלמה אחורית עם מסך צבעוני. וכן מערכת שליטה
+                ותפעול של המברשות, השטיפה וריקון מיכל האשפה.
+              </p><h2 data-v-ccc0b0ec="">נתונים כללים של הכלי</h2><div data-v-ccc0b0ec="" class="stats-text-dialog"><table data-v-ccc0b0ec="" dir="rtl"><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">הכלי</td><td data-v-ccc0b0ec="">טיסאן H5 מטאטא כבישים הידרוסטטי</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">דגם</td><td data-v-ccc0b0ec="">טיסאן H5</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">אורך הכלי</td><td data-v-ccc0b0ec="">5000 מ"מ</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">רוחב הכלי</td><td data-v-ccc0b0ec="">1800 מ"מ</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">גובה הכלי</td><td data-v-ccc0b0ec="">2850 מ"מ</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">משקל הכלי</td><td data-v-ccc0b0ec="">5120 ק"ג</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">משקל מקסימלי</td><td data-v-ccc0b0ec="">11500 ק"ג</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">נפח מיכל אשפה</td><td data-v-ccc0b0ec="">5 מ"ק</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">קוטר מברשות שטוחות</td><td data-v-ccc0b0ec="">630 מ"מ</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">מהירות סיבובי מברשות</td><td data-v-ccc0b0ec="">150 סל"ד</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">נפח מיכל מים</td><td data-v-ccc0b0ec="">670 ליטר</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">גובה מקסימלי בריקון אשפה</td><td data-v-ccc0b0ec="">1700 מ"מ</td></tr></table></div><h2 data-v-ccc0b0ec="">נתוני מנוע</h2><div data-v-ccc0b0ec="" class="stats-text-dialog"><table data-v-ccc0b0ec="" dir="rtl"><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">כח</td><td data-v-ccc0b0ec="">141 כ"ס (104 KW)</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">פעימות מנוע</td><td data-v-ccc0b0ec="">4 פעימות דיזל</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">נפח מנוע</td><td data-v-ccc0b0ec="">4.5 ליטר</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">קירור מיים</td><td data-v-ccc0b0ec="">צריכת דלק במכסימום כח וסיבובי מנוע 173 גרם / KWH</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">יחס דחיסה</td><td data-v-ccc0b0ec="">17.5:1</td></tr></table></div><div data-v-ccc0b0ec="" class="v-responsive v-image"><div class="v-responsive__sizer" style="padding-bottom: 71.1903%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/stats.05d30dc1.png&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div><div data-v-ccc0b0ec="" class="v-responsive v-image"><div class="v-responsive__sizer" style="padding-bottom: 133.333%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/h5-1.9d2d8df2.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div><div data-v-ccc0b0ec="" class="v-responsive v-image"><div class="v-responsive__sizer" style="padding-bottom: 84.5833%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/h5-2.4b619b49.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div><div data-v-ccc0b0ec="" class="v-responsive v-image"><div class="v-responsive__sizer" style="padding-bottom: 133.333%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/H5-H4.441e8503.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div></div></div></div></div></div></div><div tabindex="-1" data-v-ccc0b0ec="" class="v-dialog__content" style="z-index: 0;"><div class="v-dialog" style="display: none;"><div data-v-ccc0b0ec="" class="v-card theme--light"><nav data-v-ccc0b0ec="" class="v-toolbar v-toolbar--fixed theme--light" style="margin-top: 0px; padding-right: 0px; padding-left: 0px; transform: translateY(0px);" data-booted="true"><div class="v-toolbar__content" style="height: 48px;"><div data-v-ccc0b0ec="" class="v-toolbar__title"><span data-v-ccc0b0ec="" class="black--text">H4 - מפרט טכני</span></div><div data-v-ccc0b0ec="" class="spacer"></div><div data-v-ccc0b0ec="" class="v-toolbar__items"><i data-v-ccc0b0ec="" aria-hidden="true" class="v-icon v-icon--link material-icons theme--light">close</i></div></div></nav><div data-v-ccc0b0ec="" class="v-card__text"><div data-v-ccc0b0ec="" class="container"><div data-v-ccc0b0ec="" class="flex xs12 xl8 ma-auto"><div data-v-ccc0b0ec="" class="v-responsive v-image"><div class="v-responsive__sizer" style="padding-bottom: 50%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/h4-0.b30f714d.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div></div><div data-v-ccc0b0ec="" class="flex xs12 xl8 ma-auto"><span data-v-ccc0b0ec="" class="display-2">H4</span><p data-v-ccc0b0ec="" style="font-size: 1.8em;">
+                מטאטא כבישים הידרוסטטי , המיכל בנפח של 4 מ"ק. מנוע פרקינס או
+                איווקו, משאבות הידראוליות מתוצרת .BOSCH הכלי רחב יותר מדגם H3
+                וכולל מנוע גדול יותר. כולל 4 מברשות הנעות לכל הכיוונים ופיית
+                יניקה בעלת כושר יניקה גבוה במיוחד, מתזי מיים הממוקמים בחזית
+                הכלי מפזרים רסס מיים כדי לספוג את האבק בזמן פעולת הטיאטוא. ה
+                H4 כולל מערכת נוספת לשטיפה בלחץ עם צינור באורך של 15 מטר ואקדח
+                שטיפה בלחץ גבוה. המערכת מורכבת על גג הכלי ומאפשרת שטיפה בכל
+                הכיוונים. תא נהג פנורמי, מבודד מפגעי מזג אויר, רעשים, אבק וגזי
+                פליטה. תא הנהג כולל מערכת מיזוג אויר, כיסא נהג קפיצי, מתכוונן
+                ונוח במיוחד. וכן כיסא נוסף לאיש צוות שני. רדיו ומצלמה אחורית
+                עם מסך צבעוני. וכן מערכת שליטה ותפעול של המברשות, השטיפה
+                וריקון מיכל האשפה.
+              </p><h2 data-v-ccc0b0ec="">נתונים כללים של הכלי</h2><div data-v-ccc0b0ec="" class="stats-text-dialog"><table data-v-ccc0b0ec="" dir="rtl"><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">הכלי</td><td data-v-ccc0b0ec="">טיסאן מטאטא כבישים הידרוסטטי</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">דגם</td><td data-v-ccc0b0ec="">H4 טיסאן</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">אורך הכלי</td><td data-v-ccc0b0ec="">5200 מ"מ</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">רוחב הכלי</td><td data-v-ccc0b0ec="">1700 מ"מ - 2950 מ"מ כולל מברשות</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">גובה הכלי</td><td data-v-ccc0b0ec="">2740 מ"מ</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">נפח תא אשפה</td><td data-v-ccc0b0ec="">4 מטר מעוקב</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">נפח מיכל מיים</td><td data-v-ccc0b0ec="">625 ליטר</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">קוטר מברשות</td><td data-v-ccc0b0ec="">800 מ"מ</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">מהירות סיבוב מברשות</td><td data-v-ccc0b0ec="">30-150 סל"ד</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">מקסימום גובה שפיכת פסולת</td><td data-v-ccc0b0ec="">1650 מ"מ</td></tr></table><h2 data-v-ccc0b0ec="">נתוני מנוע</h2><table data-v-ccc0b0ec="" dir="rtl"><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">עוצמה</td><td data-v-ccc0b0ec="">126 כ"ס (93 KW )</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">מחזור</td><td data-v-ccc0b0ec="">4 פעימות דיזל</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">קוטר בוכנות</td><td data-v-ccc0b0ec="">104x 132</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">נפח כללי</td><td data-v-ccc0b0ec="">4.5 ליטר</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">יחס דחיסה</td><td data-v-ccc0b0ec="">17.5:1</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">קירור מים</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">צריכת דלק</td><td data-v-ccc0b0ec="">173 גרם ל KWH</td></tr></table></div><div data-v-ccc0b0ec="" role="img" aria-label="idanim-h4" class="v-responsive v-image"><div class="v-responsive__sizer" style="padding-bottom: 66.5615%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/stats.e3fe879f.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div><div data-v-ccc0b0ec="" role="img" aria-label="idanim-h4" class="v-responsive v-image"><div class="v-responsive__sizer" style="padding-bottom: 75%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/h4-1.291b9548.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div><div data-v-ccc0b0ec="" role="img" aria-label="idanim-h4" class="v-responsive v-image"><div class="v-responsive__sizer" style="padding-bottom: 75%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/h4-2.8920f5a2.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div></div></div></div></div></div></div><div tabindex="-1" data-v-ccc0b0ec="" class="v-dialog__content" style="z-index: 0;"><div class="v-dialog" style="display: none;"><div data-v-ccc0b0ec="" class="v-card theme--light"><div data-v-ccc0b0ec="" class="v-card__title"><nav data-v-ccc0b0ec="" class="v-toolbar v-toolbar--fixed theme--light" style="margin-top: 0px; padding-right: 0px; padding-left: 0px; transform: translateY(0px);" data-booted="true"><div class="v-toolbar__content" style="height: 48px;"><div data-v-ccc0b0ec="" class="v-toolbar__title"><span data-v-ccc0b0ec="" class="black--text">H3 מכונת קירצוף ושטיפה</span></div><div data-v-ccc0b0ec="" class="spacer"></div><div data-v-ccc0b0ec="" class="v-toolbar__items"><i data-v-ccc0b0ec="" aria-hidden="true" class="v-icon v-icon--link material-icons theme--light">close</i></div></div></nav></div><div data-v-ccc0b0ec="" class="v-card__text"><div data-v-ccc0b0ec="" class="container"><div data-v-ccc0b0ec="" class="flex xs12 xl8 ma-auto"><div data-v-ccc0b0ec="" class="v-responsive v-image"><div class="v-responsive__sizer" style="padding-bottom: 50%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/1.2cec62a0.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div></div><div data-v-ccc0b0ec="" class="flex xs12 xl8 ma-auto"><span data-v-ccc0b0ec="" class="display-2">H3 מכונת קירצוף ושטיפה</span><ul data-v-ccc0b0ec="" style="font-size: 1.8em;"><li data-v-ccc0b0ec="">4X4.</li><li data-v-ccc0b0ec="">היגוי אחורי.</li><li data-v-ccc0b0ec="">הגה שמאלי.</li><li data-v-ccc0b0ec="">
+                  הליקופטר לקירצוף ידני בקוטר של 75 ס"מ שיותקן על מנשא אחורי.
+                </li><li data-v-ccc0b0ec="">מוט שטיפה קדמי לרוחב המכונה.</li><li data-v-ccc0b0ec="">
+                  תא נהג עם חלונות פנורמיים, שני מושבים, כסא הנהג הידראולי
+                  מתכוונן נוח במיוחד.
+                </li><li data-v-ccc0b0ec="">
+                  מצלמה קידמית ומצלמה אחורית עם שני מסכים צבעוניים בתא הנהג.
+                </li><li data-v-ccc0b0ec="">רוחב שטיפה – 130 ס"מ.</li><li data-v-ccc0b0ec="">
+                  זרוע קירצוף ושטיפה קדמית הכוללת שני משטחי קירצוף עגולים עם
+                  תנועה ימינה ושמאלה של זרוע הקירצוף והשטיפה.
+                </li><li data-v-ccc0b0ec="">
+                  מערכת שטיפה בלחץ נוספת עם צינור באורך של 50 מטר ממוקמת כך
+                  שתוכל להגיע לכל הצדדים, כוללת שני אקדחי מיים בלחץ, כך שאפשר
+                  לעבוד בשני הצדדים במקביל.
+                </li><li data-v-ccc0b0ec="">שני מיכלי מיים עשויים נירוסטה CC</li><li data-v-ccc0b0ec="">משאבת המיים בלחץ של 300 בר, ספיקה של 40 ליטר לדקה.</li><li data-v-ccc0b0ec="">
+                  מערכת לחימום המיים בהתאם לתקנות המחמירות ביותר לחימום המיים
+                  עד לטמפ' של 80 מעלות.
+                </li><li data-v-ccc0b0ec="">שני גשרי תאורה עם שני פנסים מהבהבים בכל אחד.</li></ul><div data-v-ccc0b0ec="" class="stats-text-dialog"><h2 data-v-ccc0b0ec="">נתוני מנוע</h2><table data-v-ccc0b0ec="" dir="rtl"><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">עוצמה</td><td data-v-ccc0b0ec="">126 כ"ס (93 KW )</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">מחזור</td><td data-v-ccc0b0ec="">4 פעימות דיזל</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">מנוע</td><td data-v-ccc0b0ec="">פרקינס טורבו דיזל</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">קוטר בוכנות</td><td data-v-ccc0b0ec="">104x 132</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">נפח כללי</td><td data-v-ccc0b0ec="">4.5 ליטר</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">יחס דחיסה</td><td data-v-ccc0b0ec="">17.5:1</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">קירור מים</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">צריכת דלק</td><td data-v-ccc0b0ec="">173 גרם ל KWH</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">מיכל מים נקיים</td><td data-v-ccc0b0ec="">1,250 ליטר</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">מיכל מים מלוכלכים</td><td data-v-ccc0b0ec="">1,000</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">מהירות נסיעה מקסימלית</td><td data-v-ccc0b0ec="">30 קמ"ש</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">מהירות נסיעה בזמן עבודה</td><td data-v-ccc0b0ec="">12 קמ"ש</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">משקל כולל</td><td data-v-ccc0b0ec="">6,000 ק"ג</td></tr></table></div><div data-v-ccc0b0ec="" role="img" aria-label="idanim-h3c" class="v-responsive v-image"><div class="v-responsive__sizer" style="padding-bottom: 75%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/2.575886a4.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div></div></div></div></div></div></div><div tabindex="-1" data-v-ccc0b0ec="" class="v-dialog__content" style="z-index: 0;"><div class="v-dialog" style="display: none;"><div data-v-ccc0b0ec="" class="v-card theme--light"><nav data-v-ccc0b0ec="" class="v-toolbar v-toolbar--fixed theme--light" style="margin-top: 0px; padding-right: 0px; padding-left: 0px; transform: translateY(0px);" data-booted="true"><div class="v-toolbar__content" style="height: 48px;"><div data-v-ccc0b0ec="" class="v-toolbar__title"><span data-v-ccc0b0ec="" class="black--text">H3 - מפרט טכני</span></div><div data-v-ccc0b0ec="" class="spacer"></div><div data-v-ccc0b0ec="" class="v-toolbar__items"><i data-v-ccc0b0ec="" aria-hidden="true" class="v-icon v-icon--link material-icons theme--light">close</i></div></div></nav><div data-v-ccc0b0ec="" class="v-card__text"><div data-v-ccc0b0ec="" class="container"><div data-v-ccc0b0ec="" class="flex xs12 xl8 ma-auto"><div data-v-ccc0b0ec="" class="v-responsive v-image"><div class="v-responsive__sizer" style="padding-bottom: 100.333%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/h3-0.8b3c126c.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div></div><div data-v-ccc0b0ec="" class="flex xs12 xl8 ma-auto"><span data-v-ccc0b0ec="" class="display-1">דגם H3 מתוצרת "טיסאן"</span><p data-v-ccc0b0ec="" style="font-size: 1.8em;">
+                מטאטא כבישים הידרוסטטי , הכלי מיוצר בנפחים שונים, 3.2 – 3.5 –
+                4 מ"קמ מנוע פרקינס, משאבות הידראוליות מתוצרת BOSCH הכלי צר
+                ומתאים במיוחד לרחובות צרים ואזורים צפופים. כולל 4 מברשות הנעות
+                לכל הכיוונים ופיית יניקה בעלת כושר יניקה גבוה במיוחד, מתזי
+                מיים הממוקמים בחזית הכלי מפזרים רסס מיים כדי לספוג את האבק
+                בזמן פעולת הטיאוט. הH3 כולל מערכת נוספת לשטיפה בלחץ עם צינור
+                באורך של 15 מטר ואקדח שטיפה בלחץ גבוה. המערכת מורכבת על גג
+                הכלי ומאפשרת שטיפה בכל הכיוונים. תא נהג פנורמי, מבודד מפגעי
+                מזג אויר, רעשים, אבק וגזי פליטה. תא הנהג כולל מערכת מיזוג
+                אויר, כיסא נהג קפיצי, מתכוונן ונוח במיוחד, רדיו ומצלמה אחורית
+                עם מסך צבעוני. וכן מערכת שליטה ותפעול של המברשות, השטיפה
+                וריקון מיכל האשפה.
+              </p><h2 data-v-ccc0b0ec="">נתונים כללים של הכלי</h2><div data-v-ccc0b0ec="" class="stats-text-dialog"><table data-v-ccc0b0ec="" dir="rtl"><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">הכלי</td><td data-v-ccc0b0ec="">טיסאן מטאטא כבישים הידרוסטטי</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">דגם</td><td data-v-ccc0b0ec="">H3 טיסאן</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">אורך הכלי</td><td data-v-ccc0b0ec="">5200 מ"מ</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">רוחב הכלי</td><td data-v-ccc0b0ec="">1300 מ"מ כולל המברשות 1600 מ"מ</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">נפח תא אשפה</td><td data-v-ccc0b0ec="">3.2 – 3.5 – 4 מ"ק</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">נפח מיכל מיים</td><td data-v-ccc0b0ec="">400 ליטר</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">קוטר מברשות</td><td data-v-ccc0b0ec="">600 מ"מ</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">מהירות סיבוב מברשות</td><td data-v-ccc0b0ec="">30-150 סל"ד</td></tr></table><h2 data-v-ccc0b0ec="">נתוני מנוע</h2><table data-v-ccc0b0ec=""><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">מנוע</td><td data-v-ccc0b0ec="">פרקינס</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">עוצמה</td><td data-v-ccc0b0ec="">101 כ"ס</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">מס' צילינדרים</td><td data-v-ccc0b0ec="">4</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">נפח כללי</td><td data-v-ccc0b0ec="">4.4 ליטר</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">יחס קומפרסיה</td><td data-v-ccc0b0ec="">16.2:1</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">קירור מים</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">צריכת דלק</td><td data-v-ccc0b0ec="">173 גרם/קילוואט</td></tr></table></div><div data-v-ccc0b0ec="" class="flex"><h3 data-v-ccc0b0ec="">סרטונים</h3><a data-v-ccc0b0ec="" href="https://www.youtube.com/watch?v=ZDpFsBsEEiE">סרטון 1</a><a data-v-ccc0b0ec="" href="https://www.youtube.com/watch?v=q3j2xfzalU4">סרטון 2</a><a data-v-ccc0b0ec="" href="https://www.youtube.com/watch?v=Lrcw8R13Als">סרטון 3</a></div><div data-v-ccc0b0ec="" class="v-responsive v-image"><div class="v-responsive__sizer" style="padding-bottom: 74.359%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/stats.a11e408a.png&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div><div data-v-ccc0b0ec="" class="v-responsive v-image"><div class="v-responsive__sizer" style="padding-bottom: 91.1458%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/h3-1.4c54eb28.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div><div data-v-ccc0b0ec="" class="v-responsive v-image"><div class="v-responsive__sizer" style="padding-bottom: 92.3958%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/h3-2.1fe14c79.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div></div></div></div></div></div></div><div tabindex="-1" data-v-ccc0b0ec="" class="v-dialog__content" style="z-index: 0;"><div class="v-dialog" style="display: none;"><nav data-v-ccc0b0ec="" class="v-toolbar v-toolbar--fixed theme--light" style="margin-top: 0px; padding-right: 0px; padding-left: 0px; transform: translateY(0px);" data-booted="true"><div class="v-toolbar__content" style="height: 48px;"><div data-v-ccc0b0ec="" class="v-toolbar__title"><span data-v-ccc0b0ec="" class="black--text">דגם H1 מתוצרת טיסאן</span></div><div data-v-ccc0b0ec="" class="spacer"></div><div data-v-ccc0b0ec="" class="v-toolbar__items"><i data-v-ccc0b0ec="" aria-hidden="true" class="v-icon v-icon--link material-icons theme--light">close</i></div></div></nav><div data-v-ccc0b0ec="" class="v-card theme--light"><div data-v-ccc0b0ec="" class="v-card__text"><div data-v-ccc0b0ec="" class="container"><div data-v-ccc0b0ec="" class="flex xs12 xl8 ma-auto"><div data-v-ccc0b0ec="" class="v-responsive v-image"><div class="v-responsive__sizer" style="padding-bottom: 100%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/h1-0.d8193eb4.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div></div><div data-v-ccc0b0ec="" class="flex xs12 xl8 ma-auto"><span data-v-ccc0b0ec="" class="display-1">דגם H1 תוצרת "טיסאן"</span><div data-v-ccc0b0ec="" class="stats-text-dialog"><table data-v-ccc0b0ec="" dir="rtl"><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">הכלי</td><td data-v-ccc0b0ec="">מטאטא כבישים ומדרכות</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">דגם</td><td data-v-ccc0b0ec="">H1 טיסאן</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">מהירות נסיעה</td><td data-v-ccc0b0ec="">0-24 קמ"ש</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">קיבולת מיכל האשפה</td><td data-v-ccc0b0ec="">0.55 מ"ק</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">מנוע</td><td data-v-ccc0b0ec="">דיזל</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">יכולת טיפוס</td><td data-v-ccc0b0ec="">22 מעלות</td></tr><tr data-v-ccc0b0ec=""><td data-v-ccc0b0ec="">2 מברשות צדדיות</td></tr><tr data-v-ccc0b0ec="">
+                    אופציה למברשת קדמית נוספת מתכווננת
+                  </tr><tr data-v-ccc0b0ec="">
+                    מערכת מתזים למניעת אבק במהלך הטיאוט
+                  </tr></table></div><div data-v-ccc0b0ec="" role="img" aria-label="home-1-idanim" class="v-responsive v-image"><div class="v-responsive__sizer" style="padding-bottom: 75%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/h1-1.6f383b6b.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div><div data-v-ccc0b0ec="" role="img" aria-label="home-1-idanim" class="v-responsive v-image"><div class="v-responsive__sizer" style="padding-bottom: 75%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/h1-2.acfb3a96.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div></div></div></div></div></div></div><div class="application--wrap"><main class="v-content" style="padding: 0px;" data-booted="true"><div class="v-content__wrap"><div data-v-66500d98=""><nav data-v-66500d98="" class="v-toolbar v-toolbar--fixed theme--light" style="margin-top: 0px; padding-right: 0px; padding-left: 0px; transform: translateY(0px);" data-booted="true"><div class="v-toolbar__content" style="height: 48px;"><button data-v-66500d98="" type="button" class="hidden-md-and-up v-toolbar__side-icon v-btn v-btn--icon theme--light"><div class="v-btn__content"><i data-v-66500d98="" aria-hidden="true" class="v-icon material-icons theme--light">menu</i></div></button><div data-v-66500d98="" class="v-toolbar__items hidden-sm-and-down RTL"><img data-v-66500d98="" src="/img/logo2.846b8222.png" class="logo1"><button data-v-66500d98="" type="button" class="v-btn v-btn--flat theme--light"><div class="v-btn__content">בית</div></button><button data-v-66500d98="" type="button" class="v-btn v-btn--flat theme--light"><div class="v-btn__content">מוצרים</div></button><button data-v-66500d98="" type="button" class="v-btn v-btn--flat theme--light"><div class="v-btn__content">עלינו</div></button><button data-v-66500d98="" type="button" class="v-btn v-btn--flat theme--light"><div class="v-btn__content">צור קשר</div></button></div><div data-v-66500d98="" class="spacer"></div><div data-v-66500d98="" class="hidden-md-and-up" style="width: 13rem;"><div data-v-66500d98="" class="topbar-contact hidden-sm-and-down"><span data-v-66500d98="">טלפון</span>:
+        <span data-v-66500d98="">03-6208656/7</span></div><img data-v-66500d98="" src="/img/trans.e71bdbb6.png" class="topbar-logo"></div></div></nav><aside data-v-66500d98="" class="idanim-bg darken-3 v-navigation-drawer v-navigation-drawer--close v-navigation-drawer--fixed v-navigation-drawer--temporary theme--dark" style="height: 100%; margin-top: 0px; max-height: calc(100% - 0px); transform: translateX(-300px); width: 300px;" data-booted="true"><div data-v-66500d98="" class="v-list theme--dark"><div data-v-66500d98=""><a class="v-list__tile v-list__tile--link theme--dark"><div data-v-66500d98="" class="v-list__tile__content"><div data-v-66500d98="" class="v-list__tile__title">בית</div></div></a></div><div data-v-66500d98=""><a class="v-list__tile v-list__tile--link theme--dark"><div data-v-66500d98="" class="v-list__tile__content"><div data-v-66500d98="" class="v-list__tile__title">מוצרים</div></div></a></div><div data-v-66500d98=""><a class="v-list__tile v-list__tile--link theme--dark"><div data-v-66500d98="" class="v-list__tile__content"><div data-v-66500d98="" class="v-list__tile__title">צור קשר</div></div></a></div><div data-v-66500d98=""><a class="v-list__tile v-list__tile--link theme--dark"><div data-v-66500d98="" class="v-list__tile__content"><div data-v-66500d98="" class="v-list__tile__title">עלינו</div></div></a></div></div><div class="v-navigation-drawer__border"></div></aside></div><div><section id="one"><div data-v-72b878a7="" class="container fluid grid-list-xs pa-0"><div data-v-72b878a7="" class="layout row wrap justify-start fill-height align-end"><div data-v-72b878a7="" class="v-responsive v-image main-image"><div class="v-responsive__sizer" style="padding-bottom: 50%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/H5-main.f0bcc11d.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"><div data-v-72b878a7="" class="container image-screen fill-height fluid"><div data-v-72b878a7="" class="layout fill-height row justify-center align-center"><div data-v-72b878a7="" class="flex xs12 text-xs-center"></div></div></div></div></div><div data-v-72b878a7=""></div></div></div></section><section><div data-v-4d6bbd23=""><div data-v-4d6bbd23="" class="container grid-list-xs grid-list-md fluid pa-0"><div data-v-4d6bbd23="" class="layout row wrap"><div data-v-4d6bbd23="" class="flex right-box pa-3 xs12 xl6 md6"><h2 data-v-4d6bbd23="" class="right-box-title">שירות ומוצרים</h2><ul data-v-4d6bbd23=""><div data-v-4d6bbd23="" class="flex ma-1 d-inline-flex"><i data-v-4d6bbd23="" aria-hidden="true" class="v-icon icon material-icons theme--light" style="font-size: 36px;">check</i><li data-v-4d6bbd23=""> ייבוא ושיווק מכונות טיאוט בגדלים שונים</li></div></ul><ul data-v-4d6bbd23=""><div data-v-4d6bbd23="" class="flex ma-1 d-inline-flex"><i data-v-4d6bbd23="" aria-hidden="true" class="v-icon icon material-icons theme--light" style="font-size: 36px;">check</i><li data-v-4d6bbd23="">אספקת כלים</li></div></ul><ul data-v-4d6bbd23=""><div data-v-4d6bbd23="" class="flex ma-1 d-inline-flex"><i data-v-4d6bbd23="" aria-hidden="true" class="v-icon icon material-icons theme--light" style="font-size: 36px;">check</i><li data-v-4d6bbd23="">טיאוט כבישים , חניונים ומדרכות</li></div></ul><ul data-v-4d6bbd23=""><div data-v-4d6bbd23="" class="flex ma-1 d-inline-flex"><i data-v-4d6bbd23="" aria-hidden="true" class="v-icon icon material-icons theme--light" style="font-size: 36px;">check</i><li data-v-4d6bbd23="">תחזוקה וטיפול במכונות טיאוט</li></div></ul></div><div data-v-4d6bbd23="" class="flex pa-0 xs12 md6 xl6"><div data-v-4d6bbd23="" class="v-responsive v-image"><div class="v-responsive__sizer" style="padding-bottom: 66.6667%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/service.706a0a8a.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div></div></div><div data-v-4d6bbd23="" class="layout row wrap"><div data-v-4d6bbd23="" class="flex pa-0 xs12 md6 xl6"><div data-v-4d6bbd23="" class="v-responsive v-image" cover=""><div class="v-responsive__sizer" style="padding-bottom: 66.6667%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;http://localhost:8000/img/h5-2.4b619b49.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div></div><div data-v-4d6bbd23="" class="flex right-box pa-3 xs12 xl6 md6"><h2 data-v-4d6bbd23="" class="right-box-title">אמנת השירות</h2><p data-v-4d6bbd23="" class="about-text">
+          קבוצת עידנים רואה את נושא השירות ואיכות העבודה כיעד ראשון. החברות
+          השונות מעסיקות מנהלי עבודה שכל מטרתם היא לפקח ולייעל את איכות העבודה
+          והשרות שהקבוצה מעניקה ללקוחות השונים. עידנים עבודות ציבוריות בע"מ
+          מפעילה רכבי טיאוט חדישים בגדלים שונים, מעסיקה מכונאים, מנהלים
+          ועובדים מיומנים והכל בכדי לוודא שהעבודה תתנהל ברמה הגבוהה ביותר.
+          עידנים תשתיות בע"מ המשווקת מטאטאי כביש וציוד ניקיון נוסף, מפעילה
+          מערך שירות של מכונאים בעלי נסיון של שנים רבות. לרשות החברה עומד מוסך
+          מצוייד היטב, המאוייש במכונאים ואנשי שירות ותיקים ומנוסים. בנוסף,
+          מפעילה החברה ניידת שירות המאובזרת בציוד וכלים הטובים ביותר ומשמשת
+          מעין מוסך נייד, כמו כן יש בניידת השירות מגוון עצום של חלקים המאפשר
+          לבצע את הטיפולים והתיקונים הנדרשים במקום הימצאו של הכלי ובזמן הקצר
+          ביותר. החברה מתחייבת להעניק שירות וטיפול ללא הגבלה לשביעות רצון
+          הלקוח.
+        </p><div data-v-4d6bbd23="" class="flex text-xs-center"><span data-v-4d6bbd23="" class="slogen display-1">"אנחנו תמיד משתדלים יותר"</span></div></div></div></div></div></section><section id="two"><div data-v-ccc0b0ec="" class="container grid-list-xs grid-list-md fluid"><div data-v-ccc0b0ec="" class="layout row wrap justify-space-around  "><div data-v-ccc0b0ec="" class="flex npm3 xs12 pa-5"><span data-v-ccc0b0ec="" class="section-title">הדגמים שלנו</span></div><div data-v-ccc0b0ec="" class="flex npm xs12 pa-5"><div data-v-ccc0b0ec="" class="layout row wrap"><div data-v-ccc0b0ec="" class="flex xs12 xl3 md4"><div data-v-ccc0b0ec="" class="img-box"><img data-v-ccc0b0ec="" src="/img/h1-0.d8193eb4.jpg" alt="home-1-idanim" class="article-img"></div></div><div data-v-ccc0b0ec="" class="flex article-text npm xs12 xl8 md8 pl-3"><div data-v-ccc0b0ec="" class="fade-prod-bg"><span data-v-ccc0b0ec="" class="product-title">דגם H1 תוצרת טיסאן
+              <br data-v-ccc0b0ec=""></span></div><div data-v-ccc0b0ec="" class="layout column wrap justify-space-between"><div data-v-ccc0b0ec="" class="flex"><p data-v-ccc0b0ec="" class="caption-text">
+                מכונת טיאוט מדרכות וכבישים קטנה במיוחד.
+              </p></div><div data-v-ccc0b0ec="" class="flex"><p data-v-ccc0b0ec="" class="details-link">
+                לפרטים נוספים..
+              </p></div></div></div></div></div><div data-v-ccc0b0ec="" class="v-dialog__container" style="display: block;"></div><div data-v-ccc0b0ec="" class="flex npm xs12 pa-5"><div data-v-ccc0b0ec="" class="layout row wrap"><div data-v-ccc0b0ec="" class="flex r-product xs12 xl3 md4"><div data-v-ccc0b0ec="" class="img-box"><img data-v-ccc0b0ec="" src="/img/main.1fae06b8.jpg" alt="home-1-model" class="article-img"></div></div><div data-v-ccc0b0ec="" class="flex article-text npm xs12 xl8 md8 pr-3"><div data-v-ccc0b0ec="" class="fade-prod-bg-l text-xs-left"><span data-v-ccc0b0ec="" class="product-title">דגם H3 תוצרת טיסאן</span></div><div data-v-ccc0b0ec="" class="layout column wrap justify-space-between"><div data-v-ccc0b0ec="" class="flex"><p data-v-ccc0b0ec="" class="caption-text">
+                מטאטא כבישים הידרוסטטי , הכלי מיוצר בנפחים שונים, 3.2 – 3.5 –
+                4 מ"ק מנוע פרקינס, משאבות הידראוליות מתוצרת BOSCH הכלי צר
+                ומתאים במיוחד לרחובות צרים ואזורים צפופים. כולל 4 מברשות הנעות
+                לכל הכיוונים ופיית יניקה בעלת כושר יניקה גבוה במיוחד
+              </p></div><div data-v-ccc0b0ec="" class="flex"><p data-v-ccc0b0ec="" class="details-link">
+                לפרטים נוספים..
+              </p></div></div></div><div data-v-ccc0b0ec="" class="flex l-product xs12 xl3 md4"><div data-v-ccc0b0ec="" class="img-box"><img data-v-ccc0b0ec="" src="/img/h3-0.8b3c126c.jpg" alt="home-1-idanim" class="article-img"></div></div></div></div><div data-v-ccc0b0ec="" class="v-dialog__container" style="display: block;"></div><div data-v-ccc0b0ec="" class="flex npm xs12 pa-5"><div data-v-ccc0b0ec="" class="layout row wrap"><div data-v-ccc0b0ec="" class="flex xs12 xl3 md4"><div data-v-ccc0b0ec="" class="img-box"><img data-v-ccc0b0ec="" src="/img/1.2cec62a0.jpg" alt="home-1-H5" class="article-img"></div></div><div data-v-ccc0b0ec="" class="flex article-text npm xs12 xl8 md8 pr-3"><div data-v-ccc0b0ec="" class="fade-prod-bg"><span data-v-ccc0b0ec="" class="product-title">דגם H3 מכונת קירצוף ושטיפה</span></div><div data-v-ccc0b0ec="" class="layout column wrap justify-space-between"><div data-v-ccc0b0ec="" class="flex"><p data-v-ccc0b0ec="" class="caption-text">
+                מכונת קירצוף ושטיפה בלחץ הידרוסטטית , מנוע פרקינס או איווקו,
+                משאבות הידראוליות מתוצרת .BOSCH הנעה אחורית.
+              </p></div><div data-v-ccc0b0ec="" class="flex"><p data-v-ccc0b0ec="" class="details-link">
+                לפרטים נוספים..
+              </p></div></div></div></div></div><div data-v-ccc0b0ec="" class="v-dialog__container" style="display: block;"></div><div data-v-ccc0b0ec="" class="flex npm xs12 pa-5"><div data-v-ccc0b0ec="" class="layout row wrap"><div data-v-ccc0b0ec="" class="flex r-product xs12 xl3 md4"><div data-v-ccc0b0ec="" class="img-box"><img data-v-ccc0b0ec="" src="/img/h4-1.291b9548.jpg" alt="home-idanim-1-H4" class="article-img"></div></div><div data-v-ccc0b0ec="" class="flex article-text npm xs12 xl8 md8 pr-3"><div data-v-ccc0b0ec="" class="fade-prod-bg-l text-xs-left"><span data-v-ccc0b0ec="" class="product-title">דגם H4 תוצרת טיסאן</span></div><div data-v-ccc0b0ec="" class="layout column wrap justify-space-between"><div data-v-ccc0b0ec="" class="flex"><p data-v-ccc0b0ec="" class="caption-text">
+                מטאטא כבישים הידרוסטטי , הכלי רחב יותר מדגם H3 וכולל מנוע גדול
+                יותר מנוע פרקינס או איווקו, משאבות הידראוליות מתוצרת .BOSCH
+              </p></div><div data-v-ccc0b0ec="" class="flex"><p data-v-ccc0b0ec="" class="details-link">
+                לפרטים נוספים..
+              </p></div></div></div><div data-v-ccc0b0ec="" class="flex l-product xs12 xl3 md4"><div data-v-ccc0b0ec="" class="img-box"><img data-v-ccc0b0ec="" src="/img/h4-0.b30f714d.jpg" alt="home-1-H5" class="article-img"></div></div></div></div><div data-v-ccc0b0ec="" class="v-dialog__container" style="display: block;"></div><div data-v-ccc0b0ec="" class="flex npm xs12 pa-5"><div data-v-ccc0b0ec="" class="layout row wrap"><div data-v-ccc0b0ec="" class="flex xs12 xl3 md4"><div data-v-ccc0b0ec="" class="img-box"><img data-v-ccc0b0ec="" src="/img/h5-0.616a0667.jpg" alt="home-1-H5" class="article-img"></div></div><div data-v-ccc0b0ec="" class="flex article-text npm xs12 xl8 md8 pl-3"><div data-v-ccc0b0ec="" class="fade-prod-bg"><span data-v-ccc0b0ec="" class="product-title">דגם H5 מתוצרת טיסאן</span></div><div data-v-ccc0b0ec="" class="layout column wrap justify-space-between"><div data-v-ccc0b0ec="" class="flex"><p data-v-ccc0b0ec="" class="caption-text">
+                ספינת הדגל של המפעל, מטאטא כבישים הידרוסטטי עם מנוע חזק
+                במיוחד, המיכל בנפח של 5 מ"ק. מנוע פרקינס או איווקו, משאבות
+                הידראוליות מתוצרת .BOSCH
+              </p></div><div data-v-ccc0b0ec="" class="flex"><p data-v-ccc0b0ec="" class="details-link">
+                לפרטים נוספים..
+              </p></div></div></div></div></div><div data-v-ccc0b0ec="" class="v-dialog__container" style="display: block;"></div><div data-v-ccc0b0ec="" class="flex npm xs12 pa-5"><div data-v-ccc0b0ec="" class="layout row wrap"><div data-v-ccc0b0ec="" class="flex r-product xs12 xl3 md4">&gt;
+          <div data-v-ccc0b0ec="" class="img-box"><img data-v-ccc0b0ec="" src="/img/d4000-0.845786c2.jpg" alt="home-1-H5" class="article-img"></div></div><div data-v-ccc0b0ec="" class="flex article-text npm xs12 xl8 md8 pr-3"><div data-v-ccc0b0ec="" class="fade-prod-bg-l text-xs-left"><span data-v-ccc0b0ec="" class="product-title">דגם D4000 מתוצרת טיסאן</span></div><div data-v-ccc0b0ec="" class="layout column wrap justify-space-between"><div data-v-ccc0b0ec="" class="flex"><p data-v-ccc0b0ec="" class="caption-text">
+                משאית לטיאוט כבישים בנפח של 4.0 מ"ק. מתקן הטיאוט מורכב על גבי
+                שילדה מתוצרת "הינו טויוטה" כולל 2 מברשות צדדיות הנעות לכל
+                הכיוונים, מברשת גלילית מרכזית ופיית יניקה בעלת כושר יניקה גבוה
+                במיוחד,
+              </p></div><div data-v-ccc0b0ec="" class="flex"><p data-v-ccc0b0ec="" class="details-link">
+                לפרטים נוספים..
+              </p></div></div></div><div data-v-ccc0b0ec="" class="flex l-product xs12 xl3 md4"><div data-v-ccc0b0ec="" class="img-box"><img data-v-ccc0b0ec="" src="/img/d4000-0.845786c2.jpg" alt="home-1-H5" class="article-img"></div></div></div></div><div data-v-ccc0b0ec="" class="v-dialog__container" style="display: block;"></div><div data-v-ccc0b0ec="" class="flex npm xs12 pa-5"><div data-v-ccc0b0ec="" class="layout row wrap"><div data-v-ccc0b0ec="" class="flex l-product xs12 xl3 md4"><div data-v-ccc0b0ec="" class="img-box"><img data-v-ccc0b0ec="" src="/img/d4000-0.cc158154.jpg" alt="home-1-H5" class="article-img"></div></div><div data-v-ccc0b0ec="" class="flex article-text npm xs12 xl8 md8 pr-3"><div data-v-ccc0b0ec="" class="fade-prod-bg "><span data-v-ccc0b0ec="" class="product-title">דגם D4500 מתוצרת קדמה</span></div><div data-v-ccc0b0ec="" class="layout column wrap justify-space-between"><div data-v-ccc0b0ec="" class="flex"><p data-v-ccc0b0ec="" class="caption-text">
+                משאית לטיאוט כבישים בנפח מיכל של 4.5 מ"ק ועד 8 מ"ק. מתקן
+                הטיאוט מורכב על גבי שילדה מתוצרת "הינו טויוטה" או "דאף", תלוי
+                בגודל המיכל. כולל 2 מברשות צדדיות הנעות לכל הכיוונים, מברשת
+                גלילית מרכזית ופיית יניקה בעלת כושר יניקה גבוה במיוחד,
+              </p></div><div data-v-ccc0b0ec="" class="flex"><p data-v-ccc0b0ec="" class="details-link">
+                לפרטים נוספים..
+              </p></div></div></div><div data-v-ccc0b0ec="" class="flex r-product xs12 xl3 md4"><div data-v-ccc0b0ec="" class="img-box"><img data-v-ccc0b0ec="" src="/img/d4000-0.cc158154.jpg" alt="home-1-idanim" class="article-img"></div></div></div></div><div data-v-ccc0b0ec="" class="v-dialog__container" style="display: block;"></div><div data-v-ccc0b0ec="" class="flex npm xs12 pa-5"><div data-v-ccc0b0ec="" class="layout row wrap"><div data-v-ccc0b0ec="" class="flex r-product xs12 xl3 md4"><div data-v-ccc0b0ec="" class="img-box"><img data-v-ccc0b0ec="" src="/img/1.c890d193.jpg" alt="home-1-H5" class="article-img"></div></div><div data-v-ccc0b0ec="" class="flex article-text npm xs12 xl8 md8 pr-3"><div data-v-ccc0b0ec="" class="fade-prod-bg-l text-xs-left"><span data-v-ccc0b0ec="" class="product-title">עגלות לטיאטוא מדרכות</span></div><div data-v-ccc0b0ec="" class="layout column wrap justify-space-between"><div data-v-ccc0b0ec="" class="flex"><p data-v-ccc0b0ec="" class="caption-text">
+                מגוון רחב של עגלות לשימוש ממושך עמידות לכל פגעי מזג אויר
+                העגלות כוללות מתקן מיוחד למטאטא וליעה. ניתן לקבלן בגדלים
+                ובצבעים שונים.
+              </p></div><div data-v-ccc0b0ec="" class="flex"><p data-v-ccc0b0ec="" class="details-link">
+                לפרטים נוספים..
+              </p></div></div></div><div data-v-ccc0b0ec="" class="flex l-product xs12 xl3 md4"><div data-v-ccc0b0ec="" class="img-box"><img data-v-ccc0b0ec="" src="/img/1.c890d193.jpg" alt="home-1-idanim" class="article-img"></div></div></div></div><div data-v-ccc0b0ec="" class="v-dialog__container" style="display: block;"></div><div data-v-ccc0b0ec="" class="flex xs12"><hr data-v-ccc0b0ec="" class="sec-divider v-divider theme--light"></div></div></div></section><section><div data-v-7952fa51=""><div data-v-7952fa51="" class="container grid-list-xs grid-list-md fluid"><div data-v-7952fa51="" class="layout images row wrap"><div data-v-7952fa51="" class="flex npm3 xs12 pa-5"><span data-v-7952fa51="" class="section-title">גלרייה</span></div><div data-v-7952fa51="" class="flex xl2 xs12 md2"><div data-v-7952fa51="" class="img-box"><img data-v-7952fa51="" src="/img/1.2cec62a0.jpg" class="article-img"></div></div><div data-v-7952fa51="" class="flex xl2 xs12 md2"><div data-v-7952fa51="" class="img-box"><img data-v-7952fa51="" src="/img/2.575886a4.jpg" class="article-img"></div></div><div data-v-7952fa51="" class="flex xl2 xs12 md2"><div data-v-7952fa51="" class="img-box"><img data-v-7952fa51="" src="/img/h1-0.d8193eb4.jpg" class="article-img"></div></div><div data-v-7952fa51="" class="flex xl2 xs6 md2"><div data-v-7952fa51="" class="img-box"><img data-v-7952fa51="" src="/img/h1-1.6f383b6b.jpg" class="article-img"></div></div><div data-v-7952fa51="" class="flex xl2 xs6 md2"><div data-v-7952fa51="" class="img-box"><img data-v-7952fa51="" src="/img/h1-2.acfb3a96.jpg" class="article-img"></div></div><div data-v-7952fa51="" class="flex xl2 xs12 md2"><div data-v-7952fa51="" class="img-box"><img data-v-7952fa51="" src="/img/group.b16421b7.jpeg" class="article-img"></div></div><div data-v-7952fa51="" class="flex xl2 xs6 md2"><div data-v-7952fa51="" class="img-box"><img data-v-7952fa51="" src="/img/group1.c5f0ab54.jpeg" class="article-img"></div></div><div data-v-7952fa51="" class="flex xl2 xs6 md2"><div data-v-7952fa51="" class="img-box"><img data-v-7952fa51="" src="/img/group2.b4a81158.jpeg" class="article-img"></div></div><div data-v-7952fa51="" class="flex xl2 xs6 md2"><div data-v-7952fa51="" class="img-box"><img data-v-7952fa51="" src="/img/h3-0.8b3c126c.jpg" class="article-img"></div></div><div data-v-7952fa51="" class="flex xl2 xs6 md2"><div data-v-7952fa51="" class="img-box"><img data-v-7952fa51="" src="/img/h3-1.4c54eb28.jpg" class="article-img"></div></div><div data-v-7952fa51="" class="flex xl2 xs12 md2"><div data-v-7952fa51="" class="img-box"><img data-v-7952fa51="" src="/img/h3-2.1fe14c79.jpg" class="article-img"></div></div><div data-v-7952fa51="" class="flex xl2 xs6 md2"><div data-v-7952fa51="" class="img-box"><img data-v-7952fa51="" src="/img/h4-0.b30f714d.jpg" class="article-img"></div></div><div data-v-7952fa51="" class="flex xl2 xs6 md2"><div data-v-7952fa51="" class="img-box"><img data-v-7952fa51="" src="/img/h4-1.291b9548.jpg" class="article-img"></div></div><div data-v-7952fa51="" class="flex xl2 xs12 md2"><div data-v-7952fa51="" class="img-box"><img data-v-7952fa51="" src="/img/h5-0.616a0667.jpg" class="article-img"></div></div><div data-v-7952fa51="" class="flex xl2 xs6 md2"><div data-v-7952fa51="" class="img-box"><img data-v-7952fa51="" src="/img/h5-1.9d2d8df2.jpg" class="article-img"></div></div><div data-v-7952fa51="" class="flex xl2 xs6 md2"><div data-v-7952fa51="" class="img-box"><img data-v-7952fa51="" src="/img/H5-H4.441e8503.jpg" class="article-img"></div></div><div data-v-7952fa51="" class="flex xl2 xs6 md2"><div data-v-7952fa51="" class="img-box"><img data-v-7952fa51="" src="/img/d4000-0.845786c2.jpg" class="article-img"></div></div><div data-v-7952fa51="" class="flex xl2 xs6 md2"><div data-v-7952fa51="" class="img-box"><img data-v-7952fa51="" src="/img/d4000-1.9fa09e2c.jpg" class="article-img"></div></div><div data-v-7952fa51="" class="flex xl2 xs12 md2"><div data-v-7952fa51="" class="img-box"><img data-v-7952fa51="" src="/img/d4000-2.48635ad4.jpg" class="article-img"></div></div><div data-v-7952fa51="" class="flex xl2 xs12 md2"><div data-v-7952fa51="" class="img-box"><img data-v-7952fa51="" src="/img/d4000-0.cc158154.jpg" class="article-img"></div></div><div data-v-7952fa51="" class="flex xl2 xs6 md2"><div data-v-7952fa51="" class="img-box"><img data-v-7952fa51="" src="/img/1.c890d193.jpg" class="article-img"></div></div><div data-v-7952fa51="" class="flex xl2 xs6 md2"><div data-v-7952fa51="" class="img-box"><img data-v-7952fa51="" src="/img/2.8107fe3d.jpg" class="article-img"></div></div><div data-v-7952fa51="" class="flex xl2 xs12 md2"><div data-v-7952fa51="" class="img-box"><img data-v-7952fa51="" src="/img/3.2d2d22e1.jpg" class="article-img"></div></div></div></div></div></section><section id="four"><div data-v-3a0bd09b="" class="container grid-list-md grid-list-xl grid-list-xs fluid"><div data-v-3a0bd09b="" id="scrollama-container-_vy0aa5qdk" class="scrollama-container"><div id="scrollama-graphic-_vy0aa5qdk" class="scrollama-graphic"></div> <div id="scrollama-steps-_vy0aa5qdk" class="scrollama-steps"><div data-v-3a0bd09b="" class="layout row wrap" data-scrollama-index="0"><div data-v-3a0bd09b="" class="flex right-section m-pt-5 m-pb-5 xs12 xl3 md4 offset-md1 offset-xs0 offset-xl1 data-step"><div data-v-3a0bd09b="" class="v-card theme--light"><div data-v-3a0bd09b="" class="v-card__title white--text">מנהלים</div><div data-v-3a0bd09b="" class="v-card__text"><div data-v-3a0bd09b="" class="layout align-center"><div data-v-3a0bd09b="" class="flex"><div data-v-3a0bd09b="" class="layout row wrap"><div data-v-3a0bd09b="" class="flex xs12 pa-3"><img data-v-3a0bd09b="" src="/img/buiss.e090ed5f.png" alt="home-1-idanim" class="Profile-img"><div data-v-3a0bd09b="" class="flex text-xs-right xs12"><span data-v-3a0bd09b="" class="body-2 underline">נועם אשכנזי</span><br data-v-3a0bd09b=""><p data-v-3a0bd09b="">
+                        בעלים ומנכ"ל הקבוצה,<br data-v-3a0bd09b="">
+                        נועם צבר נסיון רב בכל הקשור לתחום נקיון כבישים
+                        ומדרכות, נחשב לאחד המומחים בתחום רכבי הטיאוט מכל
+                        הסוגים.
+                      </p></div></div></div></div></div></div></div></div><div data-v-3a0bd09b="" class="flex xs12 xl7 md7 data-step"><div data-v-3a0bd09b="" class="left-card v-card theme--light"><div data-v-3a0bd09b="" class="v-card__text"><div data-v-3a0bd09b="" class="pb-4"><span data-v-3a0bd09b="" class="display-2 about-title"> עלינו</span></div><p data-v-3a0bd09b="">
+              חברת עידנים עבודות ציבוריות בע"מ נוסדה ע"י נועם אשכנזי לפני כ 25
+              שנים. במשך כל השנים מאז הקמתה עסקה החברה במתן שירותי טיאוט
+              כבישים ומדרכות לעיריות שונות כגון, ראשון לציון, נס ציונה, יהוד,
+              סביון, תל אביב ועוד, וכל זאת באמצעות מטאטאי כביש מסוגים שונים
+              ומאות עובדים מסורים. חברת עידנים תשתיות בע"מ היא היבואן המורשה
+              והבלעדי של חברת "טיסאן" <a data-v-3a0bd09b="" href="https://www.tisan.net" target="_blank"> www.tisan.eu</a> המייצרת מטאטאי כבישים
+              בגדלים שונים, מכונות קרצוף ושטיפה בלחץ של כבישים ומדרכות, מכונות
+              שטיפה של פחי אשפה ועוד. וכן של חברת קדמה <a data-v-3a0bd09b="" href="http://kademe.com.tr/" target="_blank">www.kademe.com.tr</a>
+              המייצרת מכונות טיאוט ומתקני טיאוט המורכבים על משאיות בנפחים
+              שונים, כן מייצרת החברה משאיות לפינוי אשפה, טרקטורים ומכונות
+              שטיפה וקרצוף. עידנים תשתיות בע"מ עוסקת מזה מספר שנים ביבוא של
+              מטאטאי כביש יעודיים בנפח של החל מ 1 מ"ק עד 5 מ"ק. וגם מתקני
+              טיאוט המורכבים על משאיות מסוגים שונים, בנפח של החל מ 4 מ"ק ועד 8
+              מ"ק. כמו כן מייבאת החברה עגלות ניקיון המשמשות את עובדי הנקיון
+              לניקוי הרחובות ואביזרים שונים הקשורים לתחום ניקוי כבישים
+              ומדרכות.
+            </p></div></div></div></div></div> <div data-v-b329ee4c="" tabindex="-1" class="resize-observer"><object style="display: block; position: absolute; top: 0; left: 0; height: 100%; width: 100%; overflow: hidden; pointer-events: none; z-index: -1;" aria-hidden="true" tabindex="-1" type="text/html" data="about:blank"></object></div></div></div></section><section id="fiv"><div data-v-14b5f453="" class="container fluid grid-md-list fill-height npm"><div data-v-14b5f453="" class="layout row wrap text-xs-center align-center"><div data-v-14b5f453="" class="flex xs12"><div data-v-14b5f453="" id="scrollama-container-_3phjx074n" class="scrollama-container" offset="0.5"><div id="scrollama-graphic-_3phjx074n" class="scrollama-graphic"></div> <div id="scrollama-steps-_3phjx074n" class="scrollama-steps"><div data-v-14b5f453="" class="flex xs12 pa-5" data-scrollama-index="0"><span data-v-14b5f453="" class="section-title">צפו בהדגמה</span></div><div data-v-14b5f453="" data-step="1" class="padding-box npm" data-scrollama-index="1"><div data-v-14b5f453="" class="video-box"><iframe class="player" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="350" height="196.875" src="https://www.youtube.com/embed/q3j2xfzalU4?enablejsapi=1&amp;origin=http%3A%2F%2Flocalhost%3A8000&amp;widgetid=1" id="widget2"></iframe></div></div></div> <div data-v-b329ee4c="" tabindex="-1" class="resize-observer"><object style="display: block; position: absolute; top: 0; left: 0; height: 100%; width: 100%; overflow: hidden; pointer-events: none; z-index: -1;" aria-hidden="true" tabindex="-1" type="text/html" data="about:blank"></object></div></div></div></div></div></section><section id="six"><div data-v-1168e779="" class="container grid-list-md grid-list-xl grid-list-xs fluid"><div data-v-1168e779="" id="scrollama-container-_yk12udqm8" class="scrollama-container" offset="0.5"><div id="scrollama-graphic-_yk12udqm8" class="scrollama-graphic"></div> <div id="scrollama-steps-_yk12udqm8" class="scrollama-steps"><div data-v-1168e779="" class="layout row wrap justify-space-around" data-scrollama-index="0"><div data-v-1168e779="" class="flex right-section m-pt-5 xs12 xl3 md4 offset-md1 offset-xs0 offset-xl1 data-step"><div data-v-1168e779="" class="v-card theme--light"><div data-v-1168e779="" class="v-card__title white--text">צור קשר</div><div data-v-1168e779="" class="layout contact-layout row wrap fill-height"><div data-v-1168e779="" class="flex xl10 pt-5 md10 ma-auto xs10"><form data-v-1168e779="" action="https://formspree.io/idanim11@gmail.com" method="POST"><div data-v-1168e779="" class="v-input v-text-field v-text-field--enclosed v-text-field--outline theme--light"><div class="v-input__control"><div class="v-input__slot"><div class="v-text-field__slot"><label aria-hidden="true" class="v-label theme--light" style="left: 0px; right: auto; position: absolute;">שם</label><input aria-label="שם" name="name" text-xs-right="" type="text"></div></div><div class="v-text-field__details"><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></div><div data-v-1168e779="" class="v-input v-text-field v-text-field--enclosed v-text-field--outline theme--light"><div class="v-input__control"><div class="v-input__slot"><div class="v-text-field__slot"><label aria-hidden="true" class="v-label theme--light" style="left: 0px; right: auto; position: absolute;">אימייל</label><input aria-label="אימייל" name="_replyto" text-xs-right="" type="email"></div></div><div class="v-text-field__details"><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></div><div data-v-1168e779="" class="flex pt-5"><button data-v-1168e779="" type="submit" value="Send" class="white--text v-btn v-btn--block v-btn--large theme--light" style="font-size: 1.4em;"><div class="v-btn__content">שלח</div></button></div></form></div><div data-v-1168e779="" class="flex xs12 text-xs-center" id="contact-text"><span data-v-1168e779="">טלפון:</span><span data-v-1168e779="">03-6208656/7</span><br data-v-1168e779=""><span data-v-1168e779="">idanim11@gmail.com</span></div></div></div></div><div data-v-1168e779="" class="flex border-left fill-height pa-5 mnp2 left-section xs12 xl7 md7 data-step"><div data-v-1168e779=""><div class="vue-map-container" style="width: 100%; height: 400px;"><div class="vue-map" style="overflow: hidden;"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"><div tabindex="0" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: pan-x pan-y;"><div style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 985; transform: matrix(1, 0, 0, 1, -168, -15);"><div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 512px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="width: 27px; height: 43px; overflow: hidden; position: absolute; left: -14px; top: -43px; z-index: 0;"><img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 27px; height: 43px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div style="position: absolute; z-index: 985; transform: matrix(1, 0, 0, 1, -168, -15);"><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: -256px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 985; transform: matrix(1, 0, 0, 1, -168, -15);"><div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i15!2i19550!3i13301!4i256!2m3!1e0!2sm!3i478187592!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyAfadAd_19lorSH8SaDNfQP1rorYOirzOY&amp;token=90204" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i15!2i19549!3i13301!4i256!2m3!1e0!2sm!3i478187569!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyAfadAd_19lorSH8SaDNfQP1rorYOirzOY&amp;token=121628" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i15!2i19549!3i13300!4i256!2m3!1e0!2sm!3i478187604!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyAfadAd_19lorSH8SaDNfQP1rorYOirzOY&amp;token=55575" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i15!2i19550!3i13300!4i256!2m3!1e0!2sm!3i478187604!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyAfadAd_19lorSH8SaDNfQP1rorYOirzOY&amp;token=126298" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 512px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i15!2i19551!3i13300!4i256!2m3!1e0!2sm!3i478187592!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyAfadAd_19lorSH8SaDNfQP1rorYOirzOY&amp;token=43480" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i15!2i19548!3i13300!4i256!2m3!1e0!2sm!3i478187616!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyAfadAd_19lorSH8SaDNfQP1rorYOirzOY&amp;token=52531" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i15!2i19548!3i13301!4i256!2m3!1e0!2sm!3i478187616!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyAfadAd_19lorSH8SaDNfQP1rorYOirzOY&amp;token=70872" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i15!2i19551!3i13301!4i256!2m3!1e0!2sm!3i478187592!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyAfadAd_19lorSH8SaDNfQP1rorYOirzOY&amp;token=61821" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 985; transform: matrix(1, 0, 0, 1, -168, -15);"><div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i15!2i19550!3i13301!4i256!2m3!1e0!2sm!3i478187592!2m3!1e2!6m1!3e5!3m14!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyAfadAd_19lorSH8SaDNfQP1rorYOirzOY&amp;token=94424" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i15!2i19549!3i13301!4i256!2m3!1e0!2sm!3i478187569!2m3!1e2!6m1!3e5!3m14!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyAfadAd_19lorSH8SaDNfQP1rorYOirzOY&amp;token=77314" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i15!2i19549!3i13300!4i256!2m3!1e0!2sm!3i478187604!2m3!1e2!6m1!3e5!3m14!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyAfadAd_19lorSH8SaDNfQP1rorYOirzOY&amp;token=118276" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i15!2i19551!3i13301!4i256!2m3!1e0!2sm!3i478187592!2m3!1e2!6m1!3e5!3m14!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyAfadAd_19lorSH8SaDNfQP1rorYOirzOY&amp;token=1139" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 512px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i15!2i19551!3i13300!4i256!2m3!1e0!2sm!3i478187592!2m3!1e2!6m1!3e5!3m14!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyAfadAd_19lorSH8SaDNfQP1rorYOirzOY&amp;token=108753" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i15!2i19550!3i13300!4i256!2m3!1e0!2sm!3i478187604!2m3!1e2!6m1!3e5!3m14!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyAfadAd_19lorSH8SaDNfQP1rorYOirzOY&amp;token=98980" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i15!2i19548!3i13300!4i256!2m3!1e0!2sm!3i478187616!2m3!1e2!6m1!3e5!3m14!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyAfadAd_19lorSH8SaDNfQP1rorYOirzOY&amp;token=77322" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i15!2i19548!3i13301!4i256!2m3!1e0!2sm!3i478187616!2m3!1e2!6m1!3e5!3m14!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyAfadAd_19lorSH8SaDNfQP1rorYOirzOY&amp;token=100779" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div><div class="gm-style-pbc" style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;"><p class="gm-style-pbt"></p></div><div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;"><div style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"><div style="width: 27px; height: 43px; overflow: hidden; position: absolute; opacity: 0; touch-action: none; left: -14px; top: -43px; z-index: 0;"><img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2.png" draggable="false" usemap="#gmimap0" style="position: absolute; left: 0px; top: 0px; width: 27px; height: 43px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"><map name="gmimap0" id="gmimap0"><area log="miw" coords="13.5,0,4,3.75,0,13.5,13.5,43,27,13.5,23,3.75" shape="poly" title="" style="cursor: pointer; touch-action: none;"></map></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div></div><iframe aria-hidden="true" frameborder="0" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;" src="about:blank"></iframe><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" rel="noopener" href="https://maps.google.com/maps?ll=32.054086,34.778956&amp;z=15&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3" title="Open this area in Google Maps (opens a new window)" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 66px; height: 26px; cursor: pointer;"><img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div><div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-sizing: border-box; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 300px; height: 180px; position: absolute; left: 238px; top: 110px;"><div style="padding: 0px 0px 10px; font-size: 16px; box-sizing: border-box;">Map Data</div><div style="font-size: 13px;">Map data ©2019 Google, Mapa GISrael</div><button draggable="false" title="Close" aria-label="Close" type="button" class="gm-ui-hover-effect" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; position: absolute; cursor: pointer; user-select: none; top: 0px; right: 0px; width: 37px; height: 37px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23000000%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M19%206.41L17.59%205%2012%2010.59%206.41%205%205%206.41%2010.59%2012%205%2017.59%206.41%2019%2012%2013.41%2017.59%2019%2019%2017.59%2013.41%2012z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="pointer-events: none; display: block; width: 13px; height: 13px; margin: 12px;"></button></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 161px; bottom: 0px; width: 183px;"><div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="text-decoration: none; cursor: pointer; display: none;">Map Data</a><span>Map data ©2019 Google, Mapa GISrael</span></div></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2019 Google, Mapa GISrael</div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 92px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/en-US_US/help/terms_maps.html" target="_blank" rel="noopener" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms of Use</a></div></div><button draggable="false" title="Toggle fullscreen view" aria-label="Toggle fullscreen view" type="button" class="gm-control-active gm-fullscreen-control" style="background: none rgb(255, 255, 255); border: 0px; margin: 10px; padding: 0px; position: absolute; cursor: pointer; user-select: none; border-radius: 2px; height: 40px; width: 40px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; overflow: hidden; top: 0px; right: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%20018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"></button><div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_blank" rel="noopener" title="Report errors in the road map or imagery to Google" href="https://www.google.com/maps/@32.054086,34.778956,15z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Report a map error</a></div></div><div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" controlwidth="40" controlheight="81" style="margin: 10px; user-select: none; position: absolute; bottom: 95px; right: 40px;"><div class="gmnoprint" controlwidth="40" controlheight="81" style="position: absolute; left: 0px; top: 0px;"><div draggable="false" style="user-select: none; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 40px; height: 81px;"><button draggable="false" title="Zoom in" aria-label="Zoom in" type="button" class="gm-control-active" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2218%2C7%2011%2C7%2011%2C0%207%2C0%207%2C7%200%2C7%200%2C11%207%2C11%207%2C18%2011%2C18%2011%2C11%2018%2C11%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpolygon%20fill%3D%22%23333%22%20points%3D%2218%2C7%2011%2C7%2011%2C0%207%2C0%207%2C7%200%2C7%200%2C11%207%2C11%207%2C18%2011%2C18%2011%2C11%2018%2C11%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpolygon%20fill%3D%22%23111%22%20points%3D%2218%2C7%2011%2C7%2011%2C0%207%2C0%207%2C7%200%2C7%200%2C11%207%2C11%207%2C18%2011%2C18%2011%2C11%2018%2C11%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"></button><div style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); top: 0px;"></div><button draggable="false" title="Zoom out" aria-label="Zoom out" type="button" class="gm-control-active" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C7h18v4H0V7z%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C7h18v4H0V7z%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C7h18v4H0V7z%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"></button></div></div><div class="gmnoprint" controlwidth="40" controlheight="40" style="display: none; position: absolute;"><div style="width: 40px; height: 40px;"><button draggable="false" title="Rotate map 90 degrees" aria-label="Rotate map 90 degrees" type="button" class="gm-control-active" style="background: none rgb(255, 255, 255); display: none; border: 0px; margin: 0px 0px 32px; padding: 0px; position: relative; cursor: pointer; user-select: none; width: 40px; height: 40px; top: 0px; left: 0px; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"></button><button draggable="false" title="Tilt map" aria-label="Tilt map" type="button" class="gm-tilt gm-control-active" style="background: none rgb(255, 255, 255); display: block; border: 0px; margin: 0px; padding: 0px; position: relative; cursor: pointer; user-select: none; width: 40px; height: 40px; top: 0px; left: 0px; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="width: 18px;"></button></div></div></div></div></div><div style="background-color: white; font-weight: 500; font-family: Roboto, sans-serif; padding: 15px 25px; box-sizing: border-box; top: 5px; border: 1px solid rgba(0, 0, 0, 0.12); border-radius: 5px; left: 50%; max-width: 375px; position: absolute; transform: translateX(-50%); width: calc(100% - 10px); z-index: 1;"><div><img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/google_gray.svg" draggable="false" style="padding: 0px; margin: 0px; border: 0px; height: 17px; vertical-align: middle; width: 52px; user-select: none;"></div><div style="line-height: 20px; margin: 15px 0px;"><span style="color: rgba(0, 0, 0, 0.87); font-size: 14px;">This page can't load Google Maps correctly.</span></div><table style="width: 100%;"><tr><td style="line-height: 16px; vertical-align: middle;"><a href="https://developers.google.com/maps/documentation/javascript/error-messages?utm_source=maps_js&amp;utm_medium=degraded&amp;utm_campaign=billing#api-key-and-billing-errors" target="_blank" rel="noopener" style="color: rgba(0, 0, 0, 0.54); font-size: 12px;">Do you own this website?</a></td><td style="text-align: right;"><button class="dismissButton">OK</button></td></tr></table></div></div><div class="vue-map-hidden"><!----></div></div></div><div data-v-1168e779="" class="pb-3 pt-3"><span data-v-1168e779="" class="display-2 about-title">עידנים - </span></div><p data-v-1168e779="" class="font-weight-bold">"אנחנו תמיד משתדלים יותר"</p><p data-v-1168e779="">בעל העקידה 49 תל-אביב</p></div></div></div> <div data-v-b329ee4c="" tabindex="-1" class="resize-observer"><object style="display: block; position: absolute; top: 0; left: 0; height: 100%; width: 100%; overflow: hidden; pointer-events: none; z-index: -1;" aria-hidden="true" tabindex="-1" type="text/html" data="about:blank"></object></div></div></div></section></div></div></main><footer data-v-f40c9796="" class="v-footer theme--dark" style="height: auto;"><div data-v-f40c9796="" class="footer text-xs-center v-card v-card--flat v-card--tile theme--dark"><div data-v-f40c9796="" class="v-card__text"><img data-v-f40c9796="" src="/img/trans.e71bdbb6.png" alt="idanim-group-logo" class="footer-logo"></div><div data-v-f40c9796="" class="v-card__text white--text pt-0">
+      קבוצת עידנים רואה את נושא השירות ואיכות העבודה כיעד ראשון. החברות השונות
+      מעסיקות מנהלי עבודה שכל מטרתם היא לפקח ולייעל את איכות העבודה והשרות
+      שהקבוצה מעניקה ללקוחות השונים. עידנים עבודות ציבוריות בע"מ מפעילה רכבי
+      טיאוט חדישים בגדלים שונים, מעסיקה מכונאים, מנהלים ועובדים מיומנים והכל
+      בכדי לוודא שהעבודה תתנהל ברמה הגבוהה ביותר. עידנים תשתיות בע"מ המשווקת
+      מטאטאי כביש וציוד ניקיון נוסף, מפעילה מערך שירות של מכונאים בעלי נסיון
+      של שנים רבות. לרשות החברה עומד מוסך מצוייד היטב, המאוייש במכונאים ואנשי
+      שירות ותיקים ומנוסים. בנוסף, מפעילה החברה ניידת שירות המאובזרת בציוד
+      וכלים הטובים ביותר ומשמשת מעין מוסך נייד, כמו כן יש בניידת השירות מגוון
+      עצום של חלקים המאפשר לבצע את הטיפולים והתיקונים הנדרשים במקום הימצאו של
+      הכלי ובזמן הקצר ביותר. החברה מתחייבת להעניק שירות וטיפול ללא הגבלה
+      לשביעות רצון הלקוח.
+    </div><hr data-v-f40c9796="" class="v-divider theme--dark"><div data-v-f40c9796="" class="v-card__text white--text" style="direction: ltr;">
+      ©2019 — <strong data-v-f40c9796="">Idanim - group</strong></div></div></footer></div></div>
+  <!-- built files will be auto injected -->
+<script type="text/javascript" src="/js/chunk-vendors.bcbad4dd.js"></script><script type="text/javascript" src="/js/app.a234213b.js"></script>
+
+</body></html>
